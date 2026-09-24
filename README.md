@@ -32,7 +32,7 @@ npm start          # → http://localhost:3000
 
 ```bash
 npm i --no-save jsdom
-npm test             # 69 assertions across 9 scenarios (DOM + full games)
+npm test             # 105 assertions across 10 scenarios (DOM + full games + a 2-window online game)
 npm run test:engine  # 78 assertions, pure engine, no DOM
 ```
 
@@ -139,7 +139,7 @@ Interactions: card flight from the pile to a seat (Web Animations API), gold pul
 
 ## Test coverage
 
-`npm test` — 9 scenarios, 69 assertions (jsdom drives the real DOM, real clicks, real timers):
+`npm test` — 10 scenarios, 105 assertions (jsdom drives the real DOM, real clicks, real timers):
 
 1. **Boot & lobby** — globals, 4 default seats, seeded label, demo cards, grows to 10, blocked below 2.
 2. **Full game** (1 human + 3 robots, curtain off) — 52 picks, pile empty, all 52 cards in stacks, results modal, trophy, counters, log.
@@ -150,8 +150,38 @@ Interactions: card flight from the pile to a seat (Web Animations API), gold pul
 7. **Peek chips** — present with the curtain off, absent with it on.
 8. **The default table** (2 humans + 2 robots, curtain on, auto-pass on) — full 52-pick game to the results screen.
 9. **The ping-pong loop** — rebuilds the exact soft-lock position through the real UI, asserts the rewind target is never offered, a forced give-back is refused with a toast + log entry + unchanged table, and the window still closes.
+10. **Online P2P** — two real browser windows wired together through an in-memory WebRTC broker: room create/join by code, seat assignment + naming, hands stripped to public tops on the wire (verified mid-game), a full game played across the connection with host and client agreeing card-for-card, out-of-turn/impersonation cheats dropped by the host, results + action log on both, re-deal sync, and mid-game disconnect → robot takeover.
 
 `npm run test:engine` — 78 assertions on the pure engine (sections 9–11 are the loop guard): rank legality, permanence, on-top landing, chains, turn discipline, window reset/closing, pile exhaustion, seed determinism, a 400-game randomised soak (2–10 players) and an 80-game all-robot soak (~90k decisions, zero illegal moves).
+
+## Deploy & play with friends (GitHub Pages, zero servers)
+
+**Deploy**
+
+1. Make a GitHub repo and push this folder (only `index.html` is required to run).
+2. Repo → **Settings → Pages** → *Build and deployment* → Source: **Deploy from a branch** → branch `main`, folder **/(root)** → Save.
+3. Open `https://<your-user>.github.io/<repo>/` — that URL is the thing you share.
+
+**Play together**
+
+1. One player is the **host**: *Play mode → Online → Create a room*. A 5-letter code and an invite link appear.
+2. **Copy invite link** and send it (WhatsApp, Discord, wherever). The link carries `?room=CODE`, so friends land on the join screen with the code already filled in — they type a name and hit **Join**.
+3. The host watches the seat list fill up. Any *open human seat* nobody claimed becomes a **robot** when the deal starts (or flip seats to Robot in the lobby beforehand).
+4. Host presses **Deal to the room**. Everyone's phone becomes their own private screen: your hidden cards never leave the host's process except as *your* view; other players only ever receive your public top card and your card count.
+5. Play normally — glowing seats, drag-to-give, passes, the loop guard, results, replay (the host ships the action log with the final state so every phone can replay the deal).
+
+**How the online layer works**
+
+- **Peer-to-peer WebRTC** through the free public PeerJS broker. Signalling only — the cards themselves travel directly between browsers. Nothing of yours to host or pay for.
+- **Host-authoritative.** The host runs this exact `MK` reducer for the whole room; clients send *actions*, never state. Every action is re-validated (turn, prompt, rank rule, loop guard), so a patched client cannot cheat — TEST 10 sends impersonation/out-of-turn/garbage messages and asserts the table ignores them.
+- **Privacy is enforced by the engine**, not the UI: `MK.view(state, seat)` strips every foreign stack to its public top card (true counts preserved) before it goes on the wire; the full reveal only happens at `phase: complete`.
+- **Resilience:** a dropped player's seat is taken over by a robot mid-game so the table survives; a returning player reclaims their seat via the `?room=` link + a session token; the host re-dealing pulls every client back to the table automatically.
+
+**Known limits (by design of P2P)**
+
+- The **host's tab must stay open** — it is the referee. If the host leaves, the room ends.
+- Signalling needs internet; a handful of strict-NAT / corporate networks block peer connections (the join screen says so plainly). If your group hits that often, the next step is the `server.js` WebSocket route.
+- In the offline sandboxed preview the Online button explains that the WebRTC library can't load; **Local play always works with no network at all**.
 
 ## Next
 
