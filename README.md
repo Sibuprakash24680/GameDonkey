@@ -32,7 +32,7 @@ npm start          # → http://localhost:3000
 
 ```bash
 npm i --no-save jsdom
-npm test             # 105 assertions across 10 scenarios (DOM + full games + a 2-window online game)
+npm test             # 114 assertions across 10 scenarios (DOM + full games + a 2-window online game)
 npm run test:engine  # 78 assertions, pure engine, no DOM
 ```
 
@@ -73,7 +73,7 @@ longest game went from **unbounded** to **~2,300 actions** even when every playe
 
 | Key / gesture | Action |
 |---|---|
-| `Space` | Smart primary action (pick, reveal the curtain, give to the only legal target, or pass) |
+| `Space` | Smart primary action (pick, give to the only legal target, or pass) |
 | `G` | Arm a give, then click a glowing seat |
 | `P` | Pass the exchange window |
 | **Drag** your top card onto a glowing seat | Give it |
@@ -82,7 +82,7 @@ longest game went from **unbounded** to **~2,300 actions** even when every playe
 
 ### Table settings
 
-- **Privacy curtain** — between turns the screen asks “pass the device to …” and keeps hidden cards covered. On by default; this is what makes hot-seat honest.
+- **Open table, hidden depths** — every stack shows **only its top card, to everyone, at all times**; nothing deeper is ever public. On one shared device the dock follows whoever is acting (peek chips let you flip between seats between moves); online, your device shows your full stack and nobody else’s.
 - **Auto-pass dead seats** — if your top card has no legal receiver you have no decision to make, so the table passes for you (logged as *“passed · nothing to give”*). Without this, a 10-player table needs ~10 taps per pick.
 - **Table speed** — Chill / Normal / Fast: robot thinking time and card-flight duration.
 - **Sound** — a tiny WebAudio synth (card snaps, give chimes). No audio files.
@@ -113,42 +113,59 @@ MK.legalTargets(state, seat)                     // rule enforcement lives here,
 1. `create room → 5-letter code`, host seeds the table, `seed` + roster broadcast to clients.
 2. Clients send **actions only**; the server runs `MK.reduce` on the authoritative state and broadcasts the new state (or the action + a hash).
 3. Reconnect = re-send `{seed, actionLog}` → client rebuilds the exact table.
-4. **Per-client visibility** becomes real: the server sends each client their own full stack plus everyone else's *public top card only* — the exact split the local curtain currently simulates.
+4. **Per-client visibility** is already enforced by `MK.view()` (your full stack to you, public top cards to everyone else) — the same split the P2P layer uses today.
 5. `MK.botDecide` runs server-side to fill empty seats with robots.
 
 No engine line changes for any of it.
 
 ---
 
-## Design system
+## Design system — "stadium night"
 
-Palette, used throughout (everything else is a derived tint/shade of these four):
+The look is a deliberate homage to **ipl-unbeaten.com**, sampled from its real stylesheet:
+a near-black green-tinted base (`#0b0f0d` / `#0d1411` / `#111814`), **vivid match-yellow** (`#ffe25c`,
+`#f7c85f`, `#d9a928`) for CTAs, active seats and scoreboard digits, mint (`#74e6a2`) and ice (`#bcebf2`)
+for live/online states, mono uppercase micro-labels with wide tracking, huge tight-tracked display type
+(`letter-spacing: -.06em`), and big rounded dark panels.
 
-| Token | Hex | Use |
-|---|---|---|
-| `--sage` | `#8FA28A` | felt, primary surfaces |
-| `--pale` | `#C7D3C0` | secondary surfaces, highlights |
-| `--cream` | `#F7F4ED` | page + panel background |
-| `--gold` | `#C8A96B` | accent: active turn, legal targets, CTAs |
+Structure follows the same language:
 
-Ink (`#2E382C`) is the dark end of the sage; card faces are `#FFFDF7`; **♥/♦ are rendered in deep gold** (`#A5813C`) instead of red so the whole table stays inside the palette. Cards, the card-back lattice, the table felt grain and the logo are all pure CSS/inline SVG — nothing is fetched at runtime.
+- **Lobby = stadium hero** — yellow live-strip, giant `DONKEYYY` wordmark with the donkey badge,
+  a one-line pitch, and a four-tile mono scoreboard (52 cards · 2–10 seats · −1 rank gap · 0 servers),
+  then squad sheet / play mode / settings / rules panels and a sticky CTA bar.
+- **Game = scoreboard + pitch** — a mono-digit scoreboard strip (pile left, picks, gives, phase lamp,
+  room pill), a dark floodlit pitch with a yellow centre ring, seat chips with pulse rings on legal
+  receivers, and a bottom bench console holding your card rail and the action line.
+- **Cards** — warm-white faces on the dark table, ♥/♦ in the reference's flame orange (`#ef5b2a`),
+  and dark-green lattice backs carrying the gold donkey.
 
-Interactions: card flight from the pile to a seat (Web Animations API), gold pulse on legal receivers, sparkle burst on a completed give, shake + explanatory toast on an illegal give, live table log, stack-depth layering behind each public card, and a full animated replay of the deal.
+The donkey mark, the favicon, the PWA icons and the 1200×630 social card are all generated from one
+geometry file (`branding/donkey.py`) in this palette, so every surface matches. Cards, backs, felt grain
+and logo remain pure CSS/inline SVG — nothing is fetched at runtime.
 
----
+## SEO & every-device readiness
+
+- Semantic landmarks (`header` / `main` / `footer`, one `h1`), descriptive `title`, meta description,
+  keywords, robots, `color-scheme: dark`, and a dark `theme-color` so phone browser chrome matches.
+- Open Graph + Twitter cards pointing at a real `og-image.png` (1200×630), plus JSON-LD
+  (`VideoGame`, 2–10 players, play modes, feature list) for rich results.
+- `manifest.webmanifest` + masked/square icons + apple-touch icons → installable as a standalone app
+  on Android/iOS/desktop; `viewport-fit=cover` and safe-area-friendly bars; breakpoints down to 320 px
+  and a landscape-phone layout.
+- `robots.txt` allows everything; the whole app is one fast file with zero runtime fetches.
 
 ## Test coverage
 
-`npm test` — 10 scenarios, 105 assertions (jsdom drives the real DOM, real clicks, real timers):
+`npm test` — 10 scenarios, 114 assertions (jsdom drives the real DOM, real clicks, real timers):
 
 1. **Boot & lobby** — globals, 4 default seats, seeded label, demo cards, grows to 10, blocked below 2.
-2. **Full game** (1 human + 3 robots, curtain off) — 52 picks, pile empty, all 52 cards in stacks, results modal, trophy, counters, log.
+2. **Full game** (1 human + 3 robots) — 52 picks, pile empty, all 52 cards in stacks, results modal, trophy, counters, log.
 3. **Replay** — re-dealing from the seed reproduces the final table exactly, then restores it on exit.
 4. **Deal again / leave table** — roster preserved.
-5. **2 humans, curtain on, auto-pass off** — every pass manual, curtain used repeatedly, 52 cards conserved.
+5. **2 humans on one device, auto-pass off** — every pass manual, no hand-off overlay ever appears, 52 cards conserved.
 6. **Hostile input** — self-give, seat 99, seat −3, unknown actions, pass during a pick phase: all refused, table intact.
-7. **Peek chips** — present with the curtain off, absent with it on.
-8. **The default table** (2 humans + 2 robots, curtain on, auto-pass on) — full 52-pick game to the results screen.
+7. **Peek chips + SEO** — chips on a shared device and hidden online; meta/OG/JSON-LD/manifest/landmarks all asserted.
+8. **The default table** (2 humans + 2 robots, auto-pass on) — full 52-pick game to the results screen.
 9. **The ping-pong loop** — rebuilds the exact soft-lock position through the real UI, asserts the rewind target is never offered, a forced give-back is refused with a toast + log entry + unchanged table, and the window still closes.
 10. **Online P2P** — two real browser windows wired together through an in-memory WebRTC broker: room create/join by code, seat assignment + naming, hands stripped to public tops on the wire (verified mid-game), a full game played across the connection with host and client agreeing card-for-card, out-of-turn/impersonation cheats dropped by the host, results + action log on both, re-deal sync, and mid-game disconnect → robot takeover.
 
