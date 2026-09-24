@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#8FA28A" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22m%22%3E%3Cellipse%20cx%3D%2220.5%22%20cy%3D%2243.5%22%20rx%3D%229.4%22%20ry%3D%226.4%22%20transform%3D%22rotate%28-18%2020.5%2043.5%29%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2215%22%20fill%3D%22%237E9179%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2215%22%20fill%3D%22none%22%20stroke%3D%22%23C8A96B%22%20stroke-width%3D%223%22%2F%3E%3Cg%20fill%3D%22%23C8A96B%22%3E%3Cellipse%20cx%3D%2242.5%22%20cy%3D%2245.5%22%20rx%3D%227.8%22%20ry%3D%229.2%22%20transform%3D%22rotate%286%2042.5%2045.5%29%22%2F%3E%3Cellipse%20cx%3D%2228.0%22%20cy%3D%2217.0%22%20rx%3D%223.6%22%20ry%3D%228.6%22%20transform%3D%22rotate%28-26%2028.0%2017.0%29%22%2F%3E%3Cellipse%20cx%3D%2237.0%22%20cy%3D%2216.0%22%20rx%3D%223.6%22%20ry%3D%228.6%22%20transform%3D%22rotate%2826%2037.0%2016.0%29%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%232E382C%22%3E%3Cellipse%20cx%3D%2228.2%22%20cy%3D%2217.6%22%20rx%3D%221.7%22%20ry%3D%225.2%22%20transform%3D%22rotate%28-26%2028.2%2017.6%29%22%2F%3E%3Cellipse%20cx%3D%2236.8%22%20cy%3D%2216.6%22%20rx%3D%221.7%22%20ry%3D%225.2%22%20transform%3D%22rotate%2826%2036.8%2016.6%29%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23C8A96B%22%3E%3Cellipse%20cx%3D%2235%22%20cy%3D%2234%22%20rx%3D%2210.6%22%20ry%3D%2212.6%22%20transform%3D%22rotate%2815%2035%2034%29%22%2F%3E%3Cellipse%20cx%3D%2227.5%22%20cy%3D%2237.5%22%20rx%3D%225.2%22%20ry%3D%224.6%22%20transform%3D%22rotate%28-12%2027.5%2037.5%29%22%2F%3E%3Cellipse%20cx%3D%2220.5%22%20cy%3D%2243.5%22%20rx%3D%229.4%22%20ry%3D%226.4%22%20transform%3D%22rotate%28-18%2020.5%2043.5%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M45.81%2037.05%20L46.48%2037.19%20L47.14%2037.40%20L47.80%2037.69%20L48.45%2038.06%20L49.06%2038.51%20L49.64%2039.03%20L50.17%2039.63%20L50.64%2040.30%20L51.05%2041.03%20L51.38%2041.81%20L51.63%2042.63%20L51.80%2043.48%20L51.87%2044.35%20L51.86%2045.23%20L51.76%2046.10%20L51.57%2046.95%20L51.31%2047.77%20L50.96%2048.55%20L50.55%2049.28%20L50.09%2049.96%20L49.57%2050.57%20L49.01%2051.12%20L48.43%2051.59%20L47.82%2052.01%20L46.85%2051.00%20L47.22%2050.53%20L47.56%2050.03%20L47.86%2049.50%20L48.13%2048.95%20L48.36%2048.37%20L48.56%2047.77%20L48.71%2047.15%20L48.82%2046.53%20L48.89%2045.90%20L48.92%2045.26%20L48.90%2044.63%20L48.84%2044.00%20L48.74%2043.39%20L48.60%2042.79%20L48.42%2042.20%20L48.20%2041.64%20L47.94%2041.10%20L47.64%2040.59%20L47.32%2040.12%20L46.95%2039.68%20L46.56%2039.28%20L46.15%2038.92%20L45.71%2038.60%20L45.24%2038.33%20Z%22%20fill%3D%22%232E382C%22%2F%3E%3Ccircle%20cx%3D%2229.9%22%20cy%3D%2232.1%22%20r%3D%221.8%22%20fill%3D%22%232E382C%22%2F%3E%3Cg%20clip-path%3D%22url%28%23m%29%22%3E%3Ccircle%20cx%3D%2213.4%22%20cy%3D%2245.6%22%20r%3D%224.4%22%20fill%3D%22%23F7F4ED%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2214.4%22%20cy%3D%2244.6%22%20r%3D%221.15%22%20fill%3D%22%232E382C%22%2F%3E%3C%2Fsvg%3E" /><rect%20x="2"%20y="2"%20width="60"%20height="60"%20rx="15"%20fill="#7E9179"/><rect%20x="2"%20y="2"%20width="60"%20height="60"%20rx="15"%20fill="none"%20stroke="#C8A96B"%20stroke-width="3"/><g%20fill="#C8A96B"><ellipse%20cx="42.5"%20cy="45.5"%20rx="7.8"%20ry="9.2"%20transform="rotate(6%2042.5%2045.5)"/><ellipse%20cx="28.0"%20cy="17.0"%20rx="3.6"%20ry="8.6"%20transform="rotate(-26%2028.0%2017.0)"/><ellipse%20cx="37.0"%20cy="16.0"%20rx="3.6"%20ry="8.6"%20transform="rotate(26%2037.0%2016.0)"/></g><g%20fill="#2E382C"><ellipse%20cx="28.2"%20cy="17.6"%20rx="1.7"%20ry="5.2"%20transform="rotate(-26%2028.2%2017.6)"/><ellipse%20cx="36.8"%20cy="16.6"%20rx="1.7"%20ry="5.2"%20transform="rotate(26%2036.8%2016.6)"/></g><g%20fill="#C8A96B"><ellipse%20cx="35"%20cy="34"%20rx="10.6"%20ry="12.6"%20transform="rotate(15%2035%2034)"/><ellipse%20cx="27.5"%20cy="37.5"%20rx="5.2"%20ry="4.6"%20transform="rotate(-12%2027.5%2037.5)"/><ellipse%20cx="20.5"%20cy="43.5"%20rx="9.4"%20ry="6.4"%20transform="rotate(-18%2020.5%2043.5)"/></g><path%20d="M45.81%2037.05%20L46.48%2037.19%20L47.14%2037.40%20L47.80%2037.69%20L48.45%2038.06%20L49.06%2038.51%20L49.64%2039.03%20L50.17%2039.63%20L50.64%2040.30%20L51.05%2041.03%20L51.38%2041.81%20L51.63%2042.63%20L51.80%2043.48%20L51.87%2044.35%20L51.86%2045.23%20L51.76%2046.10%20L51.57%2046.95%20L51.31%2047.77%20L50.96%2048.55%20L50.55%2049.28%20L50.09%2049.96%20L49.57%2050.57%20L49.01%2051.12%20L48.43%2051.59%20L47.82%2052.01%20L46.85%2051.00%20L47.22%2050.53%20L47.56%2050.03%20L47.86%2049.50%20L48.13%2048.95%20L48.36%2048.37%20L48.56%2047.77%20L48.71%2047.15%20L48.82%2046.53%20L48.89%2045.90%20L48.92%2045.26%20L48.90%2044.63%20L48.84%2044.00%20L48.74%2043.39%20L48.60%2042.79%20L48.42%2042.20%20L48.20%2041.64%20L47.94%2041.10%20L47.64%2040.59%20L47.32%2040.12%20L46.95%2039.68%20L46.56%2039.28%20L46.15%2038.92%20L45.71%2038.60%20L45.24%2038.33%20Z"%20fill="#2E382C"/><circle%20cx="29.9"%20cy="32.1"%20r="1.8"%20fill="#2E382C"/><g%20clip-path="url(#m)"><circle%20cx="13.4"%20cy="45.6"%20r="4.4"%20fill="#F7F4ED"/></g><clipPath%20id="m"><ellipse%20cx="20.5"%20cy="43.5"%20rx="9.4"%20ry="6.4"%20transform="rotate(-18%2020.5%2043.5)"/></clipPath><circle%20cx="14.4"%20cy="44.6"%20r="1.15"%20fill="#2E382C"/></svg>" />
+<title>Donkeyyy — Step 1: The Dealing</title>
+<style>
+/* ============================================================
+   PALETTE
+   #8FA28A  sage        #C7D3C0  pale sage
+   #F7F4ED  cream       #C8A96B  gold
+   Everything else is a derived shade/tint of these four.
+   ============================================================ */
+:root{
+  --sage:#8FA28A;
+  --pale:#C7D3C0;
+  --cream:#F7F4ED;
+  --gold:#C8A96B;
+
+  --gold-deep:#A5813C;
+  --gold-lite:#E3CFA3;
+  --ink:#2E382C;
+  --ink-2:#4C5A49;
+  --ink-3:#77856F;
+  --card-face:#FFFDF7;
+  --felt-hi:#9AAE94;
+  --felt:#7E9179;
+  --felt-lo:#5C6E57;
+  --line:rgba(46,56,44,.14);
+  --line-2:rgba(46,56,44,.28);
+  --shadow-s:0 1px 2px rgba(46,56,44,.14), 0 2px 8px rgba(46,56,44,.10);
+  --shadow-m:0 2px 6px rgba(46,56,44,.16), 0 10px 28px rgba(46,56,44,.16);
+  --shadow-l:0 8px 20px rgba(46,56,44,.20), 0 30px 70px rgba(46,56,44,.28);
+  --r-s:8px; --r-m:14px; --r-l:22px;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  --font-head:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  margin:0;font-family:var(--font-ui);color:var(--ink);
+  background:
+    radial-gradient(120% 80% at 12% 0%, #FFFDF7 0%, rgba(255,253,247,0) 55%),
+    radial-gradient(100% 70% at 100% 100%, #E9E4D6 0%, rgba(233,228,214,0) 60%),
+    var(--cream);
+  overflow:hidden;
+}
+body::after{content:"";position:fixed;inset:0;background-image:var(--grain);opacity:.05;pointer-events:none;z-index:1}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+.hidden{display:none !important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- shared bits ---------- */
+.panel{
+  background:linear-gradient(180deg,rgba(255,253,247,.96),rgba(247,244,237,.94));
+  border:1px solid var(--line);border-radius:var(--r-l);box-shadow:var(--shadow-m);
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 18px;border-radius:999px;font-weight:650;font-size:14.5px;letter-spacing:.01em;
+  border:1px solid var(--line-2);background:linear-gradient(180deg,#fff,var(--cream));
+  color:var(--ink);box-shadow:var(--shadow-s);transition:transform .12s ease, box-shadow .18s ease, filter .18s ease, background .18s;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-m)}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn:disabled{opacity:.42;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-gold{
+  border-color:var(--gold-deep);color:#3A2E14;
+  background:linear-gradient(180deg,var(--gold-lite),var(--gold) 55%,#B9975A);
+  box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 6px 18px rgba(165,129,60,.32);
+}
+.btn-sage{border-color:#6F8169;color:#F4F7F1;background:linear-gradient(180deg,#9DB096,var(--sage) 60%,#7B8E76);box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 6px 18px rgba(94,113,89,.28)}
+.btn-ghost{background:transparent;border-color:var(--line);box-shadow:none;color:var(--ink-2)}
+.btn-ghost:hover{background:rgba(143,162,138,.14)}
+.btn-lg{padding:15px 28px;font-size:16px}
+.btn-sm{padding:7px 13px;font-size:12.5px}
+.icon-btn{width:38px;height:38px;padding:0;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line);background:rgba(255,253,247,.7);transition:.16s}
+.icon-btn:hover{background:#fff;border-color:var(--gold);transform:translateY(-1px)}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(143,162,138,.18);border:1px solid var(--line);color:var(--ink-2)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 3px rgba(143,162,138,.25)}
+.gold-txt{color:var(--gold-deep)}
+h1,h2,h3{font-family:var(--font-head);font-weight:600;letter-spacing:.01em;margin:0}
+
+/* ---------- switch ---------- */
+.switch{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.switch:last-child{border-bottom:0}
+.switch .lbl{font-weight:650;font-size:14px}
+.switch .sub{font-size:12px;color:var(--ink-3);margin-top:2px;max-width:34ch;line-height:1.35}
+.tog{width:48px;height:28px;border-radius:999px;background:rgba(46,56,44,.18);position:relative;flex:0 0 auto;transition:.22s;border:1px solid var(--line-2)}
+.tog::after{content:"";position:absolute;top:2px;left:2px;width:22px;height:22px;border-radius:50%;background:var(--cream);box-shadow:var(--shadow-s);transition:.22s cubic-bezier(.3,1.4,.5,1)}
+.tog[aria-checked="true"]{background:linear-gradient(180deg,#9DB096,var(--sage))}
+.tog[aria-checked="true"]::after{transform:translateX(20px);background:var(--gold-lite)}
+
+/* ============================================================
+   SCREENS
+   ============================================================ */
+#app{height:100dvh;height:100vh;position:relative;z-index:2}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column}
+
+/* ---------- LOBBY ---------- */
+#screen-lobby{overflow:auto;padding:26px 20px 40px}
+.lobby-wrap{width:min(1080px,100%);margin:0 auto;display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:900px){.lobby-wrap{grid-template-columns:1.15fr .85fr;align-items:start}}
+.brand{display:flex;align-items:center;gap:16px;margin-bottom:6px}
+.brand .mark{width:62px;height:62px;flex:0 0 auto;filter:drop-shadow(0 6px 14px rgba(46,56,44,.25))}
+.brand h1{font-size:clamp(26px,4.4vw,40px);line-height:1.02}
+.brand h1 em{font-style:normal;color:var(--gold-deep)}
+.brand .tag{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-top:7px;font-weight:700}
+.lobby-card{padding:20px 20px 16px}
+.lobby-card > h2{font-size:17px;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.lobby-card .hint{font-size:12.5px;color:var(--ink-3);margin:0 0 14px;line-height:1.5}
+
+.seat-row{display:flex;align-items:center;gap:11px;padding:9px;border-radius:var(--r-m);border:1px solid transparent;transition:.16s}
+.seat-row:hover{background:rgba(143,162,138,.10);border-color:var(--line)}
+.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;color:#2E382C;flex:0 0 auto;box-shadow:0 0 0 2px rgba(255,253,247,.9),0 2px 8px rgba(46,56,44,.22);font-family:var(--font-head)}
+.seat-row input.nm{flex:1;min-width:0;padding:9px 12px;border-radius:10px;border:1px solid var(--line-2);background:rgba(255,255,255,.72);font-weight:600;font-size:14px}
+.seat-row input.nm:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 3px rgba(200,169,107,.22)}
+.kind{display:flex;border:1px solid var(--line-2);border-radius:999px;overflow:hidden;flex:0 0 auto}
+.kind button{padding:7px 11px;font-size:11.5px;font-weight:750;letter-spacing:.04em;color:var(--ink-3);transition:.16s}
+.kind button[aria-pressed="true"]{background:linear-gradient(180deg,#9DB096,var(--sage));color:#FBFDF9}
+.kind button[data-k="bot"][aria-pressed="true"]{background:linear-gradient(180deg,var(--gold-lite),var(--gold));color:#3A2E14}
+.x-btn{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;color:var(--ink-3);flex:0 0 auto;transition:.16s}
+.x-btn:hover{background:rgba(180,103,79,.16);color:#8E4B34}
+.lobby-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.seedbox{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-3)}
+.seedbox code{background:rgba(143,162,138,.16);border:1px solid var(--line);padding:4px 8px;border-radius:8px;font-size:12px;letter-spacing:.06em;color:var(--ink-2)}
+.rules-list{margin:0;padding:0 0 0 18px;font-size:13.4px;line-height:1.72;color:var(--ink-2)}
+.rules-list li{margin-bottom:7px}
+.rules-list b{color:var(--ink)}
+.rule-demo{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:14px 0 4px;padding:14px;border-radius:var(--r-m);background:rgba(143,162,138,.12);border:1px solid var(--line)}
+.rule-demo .arrow{font-size:20px;color:var(--gold-deep);font-weight:800}
+.rule-demo .why{width:100%;font-size:12px;color:var(--ink-3);margin-top:4px}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card{
+  position:relative;border-radius:9px;background:var(--card-face);
+  box-shadow:0 1px 1px rgba(46,56,44,.22),0 4px 12px rgba(46,56,44,.22);
+  border:1px solid rgba(46,56,44,.16);
+  aspect-ratio:5/7;user-select:none;flex:0 0 auto;
+}
+.card .corner{position:absolute;display:flex;flex-direction:column;align-items:center;line-height:.92;font-weight:800}
+.card .corner.tl{top:5%;left:7%}
+.card .corner.br{bottom:5%;right:7%;transform:rotate(180deg)}
+.card .pip{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:.94}
+.card.red{color:var(--gold-deep)}
+.card.blk{color:var(--ink)}
+.card.back{
+  background-color:#7C8F77;
+  background-image:
+    repeating-linear-gradient(45deg,rgba(200,169,107,.42) 0 1.5px,transparent 1.5px 7px),
+    repeating-linear-gradient(-45deg,rgba(200,169,107,.42) 0 1.5px,transparent 1.5px 7px),
+    radial-gradient(80% 60% at 50% 45%,rgba(247,244,237,.20),transparent 70%);
+  border:1.5px solid var(--gold);
+  box-shadow:0 1px 1px rgba(46,56,44,.3),0 5px 14px rgba(46,56,44,.3), inset 0 0 0 3px rgba(247,244,237,.14);
+}
+.card.back::after{
+  content:"";position:absolute;inset:12%;border-radius:6px;border:1px solid rgba(247,244,237,.35);
+  background:radial-gradient(circle at 50% 50%,rgba(200,169,107,.35),transparent 62%);
+}
+.card.back .emblem{position:absolute;inset:0;display:grid;place-items:center}
+.card.back .emblem svg{width:62%;height:62%;opacity:.95;filter:drop-shadow(0 1px 1px rgba(30,42,28,.4))}
+.card.sm{width:var(--sw,52px)}
+.card.sm .corner{font-size:calc(var(--sw,52px)*.24)}
+.card.sm .pip{font-size:calc(var(--sw,52px)*.5)}
+.card.md{width:var(--mw,64px)}
+.card.md .corner{font-size:calc(var(--mw,64px)*.22)}
+.card.md .pip{font-size:calc(var(--mw,64px)*.46)}
+.fx-card{position:fixed;z-index:90;pointer-events:none;filter:drop-shadow(0 14px 22px rgba(46,56,44,.42))}
+@keyframes pop-in{0%{transform:scale(.6) rotate(-8deg);opacity:0}60%{transform:scale(1.07) rotate(2deg);opacity:1}100%{transform:scale(1) rotate(0);opacity:1}}
+.pop{animation:pop-in .34s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+.shake{animation:shake .4s ease}
+
+/* ============================================================
+   GAME SCREEN
+   ============================================================ */
+#screen-game{display:flex;flex-direction:column}
+#topbar{
+  display:flex;align-items:center;gap:12px;padding:10px 14px;
+  background:linear-gradient(180deg,rgba(255,253,247,.95),rgba(247,244,237,.82));
+  border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:20;flex:0 0 auto;
+}
+#topbar .ttl{display:flex;align-items:center;gap:9px;min-width:0}
+#topbar .ttl svg{width:26px;height:26px;flex:0 0 auto}
+#topbar .ttl b{font-family:var(--font-head);font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#topbar .ttl span{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:750;display:block;margin-top:1px}
+.tb-stats{display:flex;gap:7px;margin-left:auto;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.stat{display:flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:rgba(143,162,138,.15);border:1px solid var(--line);font-size:12px;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.stat b{font-variant-numeric:tabular-nums;color:var(--ink);font-size:13px}
+.stat.hot{background:rgba(200,169,107,.22);border-color:rgba(165,129,60,.4);color:#5C4718}
+
+#table{
+  position:relative;flex:1 1 auto;min-height:0;overflow:hidden;
+  background:radial-gradient(125% 95% at 50% 38%,var(--felt-hi) 0%,var(--felt) 42%,var(--felt-lo) 100%);
+}
+#table::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.10;mix-blend-mode:overlay}
+#table::after{
+  content:"";position:absolute;left:3.5%;right:3.5%;top:4%;bottom:6%;
+  border-radius:50%/48%;border:1.5px solid rgba(200,169,107,.30);
+  box-shadow:inset 0 0 90px rgba(30,42,28,.35), 0 0 60px rgba(30,42,28,.18);pointer-events:none;
+}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:90}
+
+/* center pile */
+#center{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:9px;z-index:5;pointer-events:none}
+#deck{position:relative;width:var(--dw,66px);aspect-ratio:5/7;cursor:pointer;pointer-events:auto}
+#deck .card{position:absolute;inset:0;width:100%}
+#deck .card:nth-child(1){transform:translate(0,0) rotate(-1.4deg)}
+#deck .card:nth-child(2){transform:translate(2px,-3px) rotate(1.1deg)}
+#deck .card:nth-child(3){transform:translate(-2px,-6px) rotate(-.6deg)}
+#deck.pickable{animation:breathe 2.1s ease-in-out infinite}
+#deck.pickable:hover .card:nth-child(3){transform:translate(-2px,-13px) rotate(-3deg)}
+#deck .card{transition:transform .22s cubic-bezier(.2,1.2,.4,1)}
+@keyframes breathe{0%,100%{filter:drop-shadow(0 0 0 rgba(200,169,107,0))}50%{filter:drop-shadow(0 0 16px rgba(227,207,163,.65))}}
+#deck-count{font-size:11.5px;font-weight:800;letter-spacing:.08em;color:var(--cream);background:rgba(30,42,28,.55);border:1px solid rgba(200,169,107,.45);padding:3px 10px;border-radius:999px;text-transform:uppercase}
+#center-msg{
+  max-width:min(46ch,72vw);text-align:center;font-size:12.5px;line-height:1.45;color:var(--cream);
+  background:rgba(30,42,28,.42);border:1px solid rgba(247,244,237,.16);padding:6px 13px;border-radius:999px;
+  backdrop-filter:blur(3px);font-weight:600;
+}
+#center-msg b{color:var(--gold-lite)}
+
+/* seats */
+.seat{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:5px;z-index:6;width:var(--sw,52px);transition:filter .2s}
+.seat-stack{position:relative;width:var(--sw,52px);aspect-ratio:5/7;margin:0 auto}
+.seat-stack .layer{position:absolute;inset:0;border-radius:9px;background:linear-gradient(180deg,#6E8169,#5A6B55);border:1px solid rgba(247,244,237,.22);box-shadow:0 2px 5px rgba(20,30,18,.4)}
+.seat-stack .topcard{position:absolute;inset:0;width:100%;z-index:3}
+.seat-stack .topcard .card{width:100%;height:100%}
+.seat-plate{display:flex;align-items:center;gap:5px;padding:3px 8px 3px 3px;border-radius:999px;background:rgba(247,244,237,.92);border:1px solid rgba(46,56,44,.2);box-shadow:0 3px 10px rgba(20,30,18,.35);max-width:calc(var(--sw,52px)*2.5)}
+.seat-plate .avatar{width:24px;height:24px;font-size:11px;box-shadow:none}
+.seat-plate .nm{font-size:12px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(var(--sw,52px)*1.5)}
+.seat-plate .ct{font-size:10.5px;font-weight:800;color:var(--ink-3);background:rgba(143,162,138,.2);padding:1px 6px;border-radius:999px;font-variant-numeric:tabular-nums;flex:0 0 auto}
+.seat-tags{display:flex;gap:4px;height:19px;align-items:center}
+.tag{font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;white-space:nowrap;animation:pop-in .3s both}
+.tag.turn{background:var(--gold);color:#3A2E14;box-shadow:0 0 0 3px rgba(200,169,107,.3)}
+.tag.passed{background:rgba(46,56,44,.55);color:var(--pale)}
+.tag.you{background:var(--ink);color:var(--gold-lite)}
+.tag.bot{background:rgba(143,162,138,.35);color:var(--ink)}
+.seat.is-turn .seat-stack{filter:drop-shadow(0 0 14px rgba(227,207,163,.85))}
+.seat.is-turn .seat-plate{border-color:var(--gold);box-shadow:0 0 0 2px rgba(200,169,107,.45),0 3px 12px rgba(20,30,18,.4)}
+.seat.is-target{cursor:pointer;z-index:9}
+.seat.is-target .seat-stack{animation:target-pulse 1.15s ease-in-out infinite;cursor:pointer}
+.seat.is-target .seat-plate{border-color:var(--gold-deep);background:linear-gradient(180deg,#FFF7E4,#F3E3C0)}
+@keyframes target-pulse{
+  0%,100%{filter:drop-shadow(0 0 6px rgba(200,169,107,.7));transform:scale(1)}
+  50%{filter:drop-shadow(0 0 22px rgba(227,207,163,1));transform:scale(1.07)}
+}
+.seat.is-target::after{
+  content:"−1 ✓";position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  font-size:11px;font-weight:900;color:#3A2E14;background:linear-gradient(180deg,var(--gold-lite),var(--gold));
+  padding:2px 8px;border-radius:999px;box-shadow:0 3px 10px rgba(20,30,18,.4);white-space:nowrap;z-index:10;
+}
+.seat.is-source .seat-stack{filter:drop-shadow(0 0 12px rgba(227,207,163,.9))}
+.seat.dim{filter:grayscale(.5) brightness(.86);opacity:.72}
+.seat.clickable{cursor:pointer}
+
+/* ---------- dock ---------- */
+#dock{
+  flex:0 0 auto;background:linear-gradient(180deg,rgba(255,253,247,.97),rgba(244,240,230,.97));
+  border-top:1px solid var(--line-2);box-shadow:0 -10px 30px rgba(46,56,44,.14);z-index:15;
+  padding:10px 14px 12px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;
+}
+@media(max-width:820px){#dock{grid-template-columns:1fr;gap:9px}}
+.dock-head{display:flex;align-items:center;gap:9px;margin-bottom:7px;flex-wrap:wrap}
+.dock-head .avatar{width:26px;height:26px;font-size:11.5px}
+.dock-head b{font-size:13.5px;font-family:var(--font-head)}
+.dock-head .sub{font-size:11.5px;color:var(--ink-3);font-weight:600}
+#fan{display:flex;align-items:flex-end;gap:0;overflow-x:auto;overflow-y:hidden;padding:14px 4px 8px;scrollbar-width:thin;min-height:104px}
+#fan::-webkit-scrollbar{height:6px}
+#fan::-webkit-scrollbar-thumb{background:rgba(143,162,138,.5);border-radius:99px}
+#fan .fslot{position:relative;flex:0 0 auto;transition:transform .18s cubic-bezier(.2,1.2,.4,1)}
+#fan .fslot .card{width:var(--fw,58px)}
+#fan .fslot:hover{transform:translateY(-9px)}
+#fan .fslot.is-top .card{box-shadow:0 0 0 2px var(--gold),0 8px 20px rgba(46,56,44,.3);transform:translateY(-6px)}
+#fan .fslot.is-top::after{content:"TOP";position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:8.5px;font-weight:900;letter-spacing:.1em;color:#3A2E14;background:linear-gradient(180deg,var(--gold-lite),var(--gold));padding:2px 6px;border-radius:999px}
+#fan .fslot.giveable{cursor:grab}
+#fan .fslot.armed .card{box-shadow:0 0 0 3px var(--gold-deep),0 10px 26px rgba(165,129,60,.5);transform:translateY(-14px) rotate(-3deg)}
+#fan .empty{font-size:12.5px;color:var(--ink-3);font-style:italic;padding:26px 6px}
+.dock-actions{display:flex;flex-direction:column;gap:8px;align-items:stretch;min-width:min(300px,80vw)}
+.action-line{font-size:12.8px;line-height:1.45;color:var(--ink-2);background:rgba(143,162,138,.13);border:1px solid var(--line);border-radius:var(--r-m);padding:9px 12px}
+.action-line b{color:var(--ink)}
+.action-line kbd{font-family:var(--font-ui);font-size:10.5px;background:#fff;border:1px solid var(--line-2);border-bottom-width:2px;border-radius:5px;padding:1px 5px;font-weight:700}
+.btn-row{display:flex;gap:8px;flex-wrap:wrap}
+.btn-row .btn{flex:1 1 auto}
+#pass-track{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.pdot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:9.5px;font-weight:800;border:1.5px solid var(--line-2);background:rgba(255,255,255,.6);color:var(--ink-3);transition:.2s}
+.pdot.done{background:rgba(143,162,138,.35);border-color:#6F8169;color:var(--ink)}
+.pdot.now{border-color:var(--gold-deep);background:linear-gradient(180deg,var(--gold-lite),var(--gold));color:#3A2E14;box-shadow:0 0 0 3px rgba(200,169,107,.28);animation:target-pulse 1.3s infinite}
+.pdot.skip{opacity:.35;border-style:dashed}
+
+/* ---------- log ---------- */
+#logbtn{position:absolute;right:12px;bottom:12px;z-index:18}
+#log{
+  position:absolute;right:12px;bottom:60px;width:min(330px,calc(100vw - 24px));max-height:46vh;z-index:18;
+  display:flex;flex-direction:column;overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,253,247,.97),rgba(246,242,233,.95));
+  border:1px solid var(--line-2);border-radius:var(--r-l);box-shadow:var(--shadow-l);
+}
+#log header{display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+#log header .n{margin-left:auto;font-size:11px;color:var(--ink-3);letter-spacing:0;text-transform:none;font-weight:650}
+#loglist{overflow-y:auto;padding:8px 10px 12px;display:flex;flex-direction:column;gap:5px;scrollbar-width:thin}
+.li{display:flex;gap:9px;align-items:flex-start;padding:7px 9px;border-radius:11px;font-size:12.4px;line-height:1.42;background:rgba(143,162,138,.09);animation:slide-in .3s both}
+.li:nth-child(1){background:rgba(200,169,107,.2);border:1px solid rgba(165,129,60,.28)}
+.li .ic{width:20px;height:20px;border-radius:7px;display:grid;place-items:center;font-size:11px;flex:0 0 auto;background:rgba(46,56,44,.1);margin-top:1px}
+.li b{font-weight:800}
+.li .mini{font-size:11px;font-weight:800;padding:0 4px;border-radius:4px;background:#fff;border:1px solid var(--line)}
+.li.info{background:transparent;color:var(--ink-3);font-style:italic;font-size:11.8px;justify-content:center;text-align:center}
+@keyframes slide-in{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:none}}
+
+/* ---------- overlays ---------- */
+.overlay{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:20px;background:rgba(30,42,28,.62);backdrop-filter:blur(7px);animation:fade .25s both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal{width:min(620px,100%);max-height:88dvh;overflow:auto;padding:26px;border-radius:var(--r-l);background:linear-gradient(180deg,#FFFDF8,var(--cream));border:1px solid var(--line-2);box-shadow:var(--shadow-l);animation:rise .34s cubic-bezier(.2,1.1,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:none}}
+.modal h2{font-size:23px;margin-bottom:6px}
+.modal .lead{font-size:13.5px;color:var(--ink-3);margin:0 0 18px;line-height:1.55}
+.modal-foot{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;justify-content:flex-end}
+.curtain-card{text-align:center;max-width:440px}
+.curtain-card .big-av{width:96px;height:96px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;font-family:var(--font-head);font-size:38px;font-weight:800;color:#2E382C;box-shadow:0 0 0 6px rgba(247,244,237,.85),0 16px 40px rgba(20,30,18,.5);animation:pop-in .5s both}
+.curtain-card h2{font-size:27px}
+.curtain-card .act{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--gold-deep);margin:9px 0 20px}
+.res-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+.res-table th{text-align:left;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding:8px 9px;border-bottom:1px solid var(--line-2)}
+.res-table td{padding:9px;border-bottom:1px solid var(--line);vertical-align:middle}
+.res-table tr:hover td{background:rgba(143,162,138,.09)}
+.res-table .rank{font-family:var(--font-head);font-weight:700;color:var(--gold-deep);font-size:15px;width:26px}
+.res-table .who{display:flex;align-items:center;gap:8px;font-weight:700}
+.res-table .who .avatar{width:26px;height:26px;font-size:11px}
+.res-bar{height:7px;border-radius:99px;background:rgba(143,162,138,.2);overflow:hidden;margin-top:5px;min-width:60px}
+.res-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--sage),var(--gold))}
+.trophy{font-size:12px;font-weight:800;color:#3A2E14;background:linear-gradient(180deg,var(--gold-lite),var(--gold));padding:2px 8px;border-radius:999px;white-space:nowrap}
+.replay-bar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:10px 12px;border-radius:var(--r-m);background:rgba(143,162,138,.14);border:1px solid var(--line);margin-top:16px;font-size:12.5px;color:var(--ink-2)}
+.replay-bar .prog{flex:1 1 120px;height:6px;border-radius:99px;background:rgba(46,56,44,.16);overflow:hidden;min-width:80px}
+.replay-bar .prog i{display:block;height:100%;background:linear-gradient(90deg,var(--sage),var(--gold));width:0%;transition:width .2s linear}
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:95;padding:11px 20px;border-radius:999px;background:var(--ink);color:var(--cream);font-size:13px;font-weight:650;box-shadow:var(--shadow-l);animation:toast-in .3s cubic-bezier(.2,1.3,.4,1) both;max-width:88vw;text-align:center}
+@keyframes toast-in{from{opacity:0;transform:translate(-50%,16px)}to{opacity:1;transform:translate(-50%,0)}}
+.toast.gold{background:linear-gradient(180deg,var(--gold-lite),var(--gold));color:#3A2E14}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--ink-3);margin-top:14px}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="dkGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9D9B4"/><stop offset=".55" stop-color="#C8A96B"/><stop offset="1" stop-color="#A5813C"/></linearGradient>
+    <linearGradient id="dkSage" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9DB096"/><stop offset="1" stop-color="#6E8169"/></linearGradient>
+    <clipPath id="dkMuzzle"><ellipse cx="20.5" cy="43.5" rx="9.4" ry="6.4" transform="rotate(-18 20.5 43.5)"/></clipPath>
+    <symbol id="donkey" viewBox="0 0 64 64"><g fill="url(#dkGold)"><ellipse cx="42.5" cy="45.5" rx="7.8" ry="9.2" transform="rotate(6 42.5 45.5)"/><ellipse cx="28.0" cy="17.0" rx="3.6" ry="8.6" transform="rotate(-26 28.0 17.0)"/><ellipse cx="37.0" cy="16.0" rx="3.6" ry="8.6" transform="rotate(26 37.0 16.0)"/></g><g fill="#2E382C" opacity=".92"><ellipse cx="28.2" cy="17.6" rx="1.7" ry="5.2" transform="rotate(-26 28.2 17.6)"/><ellipse cx="36.8" cy="16.6" rx="1.7" ry="5.2" transform="rotate(26 36.8 16.6)"/></g><g fill="url(#dkGold)"><ellipse cx="35" cy="34" rx="10.6" ry="12.6" transform="rotate(15 35 34)"/><ellipse cx="27.5" cy="37.5" rx="5.2" ry="4.6" transform="rotate(-12 27.5 37.5)"/><ellipse cx="20.5" cy="43.5" rx="9.4" ry="6.4" transform="rotate(-18 20.5 43.5)"/></g><path d="M45.81 37.05 L46.48 37.19 L47.14 37.40 L47.80 37.69 L48.45 38.06 L49.06 38.51 L49.64 39.03 L50.17 39.63 L50.64 40.30 L51.05 41.03 L51.38 41.81 L51.63 42.63 L51.80 43.48 L51.87 44.35 L51.86 45.23 L51.76 46.10 L51.57 46.95 L51.31 47.77 L50.96 48.55 L50.55 49.28 L50.09 49.96 L49.57 50.57 L49.01 51.12 L48.43 51.59 L47.82 52.01 L46.85 51.00 L47.22 50.53 L47.56 50.03 L47.86 49.50 L48.13 48.95 L48.36 48.37 L48.56 47.77 L48.71 47.15 L48.82 46.53 L48.89 45.90 L48.92 45.26 L48.90 44.63 L48.84 44.00 L48.74 43.39 L48.60 42.79 L48.42 42.20 L48.20 41.64 L47.94 41.10 L47.64 40.59 L47.32 40.12 L46.95 39.68 L46.56 39.28 L46.15 38.92 L45.71 38.60 L45.24 38.33 Z" fill="#2E382C" opacity=".92"/><circle cx="29.9" cy="32.1" r="1.8" fill="#2E382C"/><g clip-path="url(#dkMuzzle)"><circle cx="13.4" cy="45.6" r="4.4" fill="#F7F4ED"/></g><circle cx="14.4" cy="44.6" r="1.15" fill="#2E382C"/><path d="M12.4 47.8 L16.8 48.8" stroke="#2E382C" stroke-width="1.05" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="donkey-badge" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#dkSage)"/>
+      <rect x="2" y="2" width="60" height="60" rx="15" fill="none" stroke="#C8A96B" stroke-width="2.4"/>
+      <rect x="7" y="7" width="50" height="50" rx="11" fill="none" stroke="#F7F4ED" stroke-opacity=".35" stroke-width="1"/>
+      <use href="#donkey"/>
+    </symbol>
+  </defs>
+</svg>
+<div id="app">
+
+  <!-- ==================== LOBBY ==================== -->
+  <section class="screen" id="screen-lobby">
+    <div class="lobby-wrap">
+      <div>
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#donkey-badge" xlink:href="#donkey-badge"></use></svg>
+          <div>
+            <h1>Donkey<em>yy</em></h1>
+            <div class="tag">Step 1 &nbsp;·&nbsp; The Dealing</div>
+          </div>
+        </div>
+
+        <div class="panel lobby-card" style="margin-top:20px">
+          <h2><span class="dot"></span> Seats at the table <span class="pill" id="seat-counter" style="margin-left:auto">4 / 10</span></h2>
+          <p class="hint">2 to 10 players. Mix humans and robots freely — robots deal, give and pass on their own so you can test the table solo.</p>
+          <div id="players-list"></div>
+          <div class="lobby-foot">
+            <button class="btn btn-ghost btn-sm" id="add-player">+ Add player</button>
+            <div class="seedbox">
+              Table seed <code id="seed-label">—</code>
+              <button class="icon-btn" id="reseed" title="New random seed" style="width:30px;height:30px">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:18px">
+        <div class="panel lobby-card">
+          <h2><span class="dot" style="background:var(--gold)"></span> Table settings</h2>
+          <div class="switch">
+            <div><div class="lbl">Privacy curtain</div><div class="sub">Between turns the screen asks “pass the device to …”. Recommended for hot-seat play.</div></div>
+            <button class="tog" id="set-curtain" role="switch" aria-checked="true"></button>
+          </div>
+          <div class="switch">
+            <div><div class="lbl">Sound</div><div class="sub">Card snaps, give chimes, table ambience blips.</div></div>
+            <button class="tog" id="set-sound" role="switch" aria-checked="true"></button>
+          </div>
+          <div class="switch">
+            <div><div class="lbl">Auto-pass dead seats</div><div class="sub">If your top card has no legal receiver you have no decision to make, so the table passes for you. Turn off to make every player tap.</div></div>
+            <button class="tog" id="set-autopass" role="switch" aria-checked="true"></button>
+          </div>
+          <div class="switch">
+            <div><div class="lbl">Table speed</div><div class="sub">How long robot turns and card flights take.</div></div>
+            <div class="kind" id="set-speed" style="flex:0 0 auto">
+              <button data-v="0.65" aria-pressed="false">Chill</button>
+              <button data-v="1" aria-pressed="true">Normal</button>
+              <button data-v="1.7" aria-pressed="false">Fast</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel lobby-card">
+          <h2><span class="dot" style="background:var(--ink-3)"></span> How Step 1 works</h2>
+          <ol class="rules-list">
+            <li>All <b>52 cards</b> (no jokers) are shuffled and stacked <b>face-down in the middle</b>.</li>
+            <li>A random player starts. Going <b>clockwise</b>, each player picks the <b>top card</b> and puts it <b>on top of their own stack</b>.</li>
+            <li>Only the <b>top card of each stack is public</b>. Everything under it is hidden.</li>
+            <li>After every pick an <b>exchange window</b> opens: you may hand your <b>top card</b> to a player whose <b>top card is exactly one rank lower</b>. Suit doesn’t matter. It’s a permanent transfer and the card lands <b>on top</b> of their stack — so chains happen.</li>
+            <li>Giving is <b>voluntary and unlimited</b>. The window closes only when <b>every player holding cards has passed</b>. Then the next player picks.</li>
+            <li>Play continues until the <b>middle pile is empty</b>. Everyone keeps their stack → <b>Step 2: Donkeyyy</b>.</li>
+          </ol>
+          <div class="rule-demo">
+            <div class="card sm blk" id="demo-a" style="--sw:46px"></div>
+            <div class="arrow">→</div>
+            <div class="card sm blk" id="demo-b" style="--sw:46px"></div>
+            <div class="card sm red" id="demo-c" style="--sw:46px"></div>
+            <div class="why"><b>K♠ → Q♥ is legal</b> (one rank lower, suit ignored). It lands on top of their stack, so now a player holding <b>A</b> can give to that new <b>K</b> — chain reaction. A <b>2</b> can never be given away, and nothing can be given to a <b>2</b>.</div>
+          </div>
+          <div class="legend">
+            <span><i style="background:var(--gold)"></i> legal receiver</span>
+            <span><i style="background:var(--sage)"></i> passed this window</span>
+            <span><i style="background:var(--ink)"></i> you</span>
+          </div>
+        </div>
+
+        <button class="btn btn-gold btn-lg" id="start-game" style="width:100%;padding:18px">
+          Shuffle &amp; start the dealing
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GAME ==================== -->
+  <section class="screen hidden" id="screen-game">
+    <header id="topbar">
+      <div class="ttl">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#donkey-badge" xlink:href="#donkey-badge"></use></svg>
+        <div><b>Donkeyyy</b><span>Step 1 · The Dealing</span></div>
+      </div>
+      <div class="tb-stats">
+        <div class="stat" title="Cards left in the middle pile">🂠 <b id="st-deck">52</b></div>
+        <div class="stat" title="Cards picked so far">Picks <b id="st-picks">0</b></div>
+        <div class="stat" title="Cards handed over">Gives <b id="st-gives">0</b></div>
+        <div class="stat hot" id="st-phase"><span class="dot"></span> Dealing</div>
+        <button class="icon-btn" id="tb-help" title="Rules (H)">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.5v.4"/><circle cx="12" cy="17.4" r=".9" fill="currentColor" stroke="none"/></svg>
+        </button>
+        <button class="icon-btn" id="tb-sound" title="Sound (M)"><span id="sound-ico">🔊</span></button>
+        <button class="icon-btn" id="tb-exit" title="Leave table">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="table">
+      <div id="seats"></div>
+      <div id="center">
+        <div id="deck"></div>
+        <div id="deck-count">52 left</div>
+        <div id="center-msg">Waiting…</div>
+      </div>
+      <div id="log" class="hidden">
+        <header>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          Table log <span class="n" id="log-n"></span>
+        </header>
+        <div id="loglist"></div>
+      </div>
+      <button class="icon-btn" id="logbtn" title="Table log">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+      </button>
+    </div>
+
+    <div id="dock">
+      <div>
+        <div class="dock-head">
+          <div class="avatar" id="dock-av">?</div>
+          <b id="dock-name">—</b>
+          <span class="sub" id="dock-sub">your stack</span>
+          <span id="dock-viewswitch" style="display:flex;gap:5px;margin-left:auto;flex-wrap:wrap"></span>
+        </div>
+        <div id="fan"></div>
+      </div>
+      <div class="dock-actions">
+        <div class="action-line" id="action-line">—</div>
+        <div class="btn-row" id="action-row"></div>
+        <div id="pass-track"></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="overlay-root"></div>
+  <div id="fx"></div>
+</div>
+
+<script>
+/* ================================================================
+   ENGINE — pure, deterministic, no DOM.
+   State + action log only, so an online server can replay/authorise
+   the exact same reducer later without touching a single line.
+   ================================================================ */
+/*__ENGINE_START__*/
+var MK = (function () {
+  "use strict";
+
+  var SUITS = [
+    { k: "S", g: "\u2660", n: "Spades",   red: false },
+    { k: "H", g: "\u2665", n: "Hearts",   red: true  },
+    { k: "C", g: "\u2663", n: "Clubs",    red: false },
+    { k: "D", g: "\u2666", n: "Diamonds", red: true  }
+  ];
+  var RANKS = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+
+  /* deterministic PRNG so a seed reproduces an identical table */
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = (a + 0x6D2B79F5) | 0;
+      var t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function buildDeck() {
+    var d = [];
+    for (var s = 0; s < 4; s++)
+      for (var r = 0; r < 13; r++)
+        d.push({ id: SUITS[s].k + RANKS[r], r: r, s: s });
+    return d;                       /* index 0 of deck = TOP of the pile */
+  }
+
+  function shuffle(arr, rnd) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(rnd() * (i + 1));
+      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    }
+    return arr;
+  }
+
+  function create(cfg) {
+    var seed = (cfg.seed >>> 0) || 1;
+    var rnd = mulberry32(seed);
+    var players = cfg.players.map(function (p, i) {
+      return {
+        seat: i, id: "p" + i,
+        name: (p.name || ("Player " + (i + 1))).slice(0, 18),
+        kind: p.kind === "bot" ? "bot" : "human",
+        stack: [],                  /* [0] = bottom … last = public TOP card */
+        picked: 0, gave: 0, got: 0, passed: 0
+      };
+    });
+    if (players.length < 2 || players.length > 10)
+      throw new Error("Donkeyyy: needs 2-10 players");
+    var starter = Math.floor(rnd() * players.length);
+    return {
+      v: 1, seed: seed, n: players.length,
+      players: players,
+      deck: shuffle(buildDeck(), rnd),
+      phase: "dealing",             /* dealing | exchange | complete */
+      turn: starter, starter: starter,
+      ex: { prompt: starter, passed: [], gives: 0, windows: 0, seen: [], lastGive: null },
+      picks: 0, gives: 0,
+      log: [],                      /* newest first */
+      last: null,                   /* last event, drives animation */
+      done: false
+    };
+  }
+
+  function top(p) { return p && p.stack.length ? p.stack[p.stack.length - 1] : null; }
+  function topOf(s, i) { return top(s.players[i]); }
+
+  /* exactly one rank lower, suit ignored, no 2->A wrap (r: 0=2 … 12=A) */
+  function legalTargets(s, i) {
+    var t = topOf(s, i), out = [];
+    if (!t || t.r === 0) return out;
+    for (var j = 0; j < s.n; j++) {
+      if (j === i) continue;
+      var tj = topOf(s, j);
+      if (tj && tj.r === t.r - 1) out.push(j);
+    }
+    return out;
+  }
+
+  /* would this give be refused by the loop guard? */
+  function wouldRewind(s, from, to) {
+    if (from == null || to == null || from === to) return true;
+    if (legalTargets(s, from).indexOf(to) < 0) return true;
+    var c = s.players[from].stack.pop();
+    s.players[to].stack.push(c);
+    var hit = !!(s.ex.seen && s.ex.seen.indexOf(arrangeKey(s)) >= 0);
+    s.players[to].stack.pop(); s.players[from].stack.push(c);
+    return hit;
+  }
+  /* legal rank-wise AND not a rewind -> what the table may actually offer */
+  function giveTargets(s, i) {
+    return legalTargets(s, i).filter(function (j) { return !wouldRewind(s, i, j); });
+  }
+
+  function eligible(s) {
+    var out = [];
+    for (var i = 0; i < s.n; i++) if (s.players[i].stack.length) out.push(i);
+    return out;
+  }
+
+  /* next seat clockwise that can act (holds >=1 card, not in skip list) */
+  function nextEligible(s, from, inclusive, skip) {
+    for (var k = inclusive ? 0 : 1; k < s.n; k++) {
+      var i = (from + k) % s.n;
+      if (s.players[i].stack.length && (!skip || skip.indexOf(i) < 0)) return i;
+    }
+    return from;
+  }
+
+  function actor(s) {
+    if (s.phase === "dealing")  return s.deck.length ? { seat: s.turn, kind: "pick" } : null;
+    if (s.phase === "exchange") return { seat: s.ex.prompt, kind: "exchange" };
+    return null;
+  }
+
+  /* the full public+hidden arrangement of the table, used by the loop guard */
+  function arrangeKey(s) {
+    var k = [];
+    for (var i = 0; i < s.n; i++)
+      k.push(s.players[i].stack.map(function (c) { return c.id; }).join(","));
+    return k.join("/");
+  }
+  var MAX_GIVES = 60;                 /* insurance net, see GIVE below */
+
+  function nm(s, i) { return s.players[i].name; }
+  function cardName(c) { return c ? RANKS[c.r] + SUITS[c.s].g : "—"; }
+
+  function pushLog(s, e) { s.log.unshift(e); if (s.log.length > 400) s.log.pop(); }
+
+  function closeWindow(s) {
+    s.ex.windows++;
+    if (s.deck.length) {
+      s.phase = "dealing";
+      s.turn = (s.turn + 1) % s.n;
+      s.ex = { prompt: s.turn, passed: [], gives: 0, windows: s.ex.windows, seen: [arrangeKey(s)], lastGive: null };
+      s.last = { t: "next", seat: s.turn };
+      pushLog(s, { t: "info", msg: nm(s, s.turn) + " picks next" });
+    } else {
+      s.phase = "complete"; s.done = true; s.last = { t: "end" };
+      pushLog(s, { t: "end" });
+    }
+  }
+
+  function reduce(s, a) {
+    if (!a || !a.t) return s;
+
+    if (a.t === "PICK") {
+      if (s.phase !== "dealing" || !s.deck.length) return s;
+      var card = s.deck.shift();
+      var p = s.players[s.turn];
+      p.stack.push(card); p.picked++;
+      s.picks++;
+      s.last = { t: "pick", seat: s.turn, card: card, at: s.picks };
+      pushLog(s, { t: "pick", seat: s.turn, card: card });
+      s.phase = "exchange";
+      s.ex = { prompt: nextEligible(s, s.turn, true, null), passed: [], gives: 0, windows: s.ex.windows, seen: [arrangeKey(s)], lastGive: null };
+      if (!s.deck.length) pushLog(s, { t: "info", msg: "Middle pile exhausted — final exchange window" });
+      return s;
+    }
+
+    if (a.t === "GIVE") {
+      if (s.phase !== "exchange") return s;
+      var from = a.from, to = a.to;
+      if (from == null || to == null || from === to) return s;
+      if (s.ex.prompt !== from) return s;                    /* only the prompted seat may act */
+      if (legalTargets(s, from).indexOf(to) < 0) return s;   /* illegal -> ignored */
+      var c = s.players[from].stack.pop();
+      s.players[to].stack.push(c);
+      /* ---- LOOP GUARD ----------------------------------------------------
+         A give that returns the table to an arrangement this window has
+         already seen is refused. That kills the A<->B ping-pong and every
+         longer cycle (A->B->C->A) while leaving all genuine moves legal:
+         chains, stacking onto a collector, and passing a received card on to
+         a *new* player all still work, because they produce fresh positions. */
+      var key = arrangeKey(s);
+      if (s.ex.seen && s.ex.seen.indexOf(key) >= 0) {
+        s.players[to].stack.pop(); s.players[from].stack.push(c);        /* undo */
+        var lg = s.ex.lastGive;
+        var reason = (lg && lg.from === to && lg.to === from && lg.card === c.id) ? "takeback" : "rewind";
+        s.last = { t: "reject", card: c, from: from, to: to, reason: reason };
+        pushLog(s, { t: "reject", from: from, to: to, card: c, reason: reason });
+        return s;
+      }
+      s.ex.seen = (s.ex.seen || []).concat(key);
+      s.ex.lastGive = { from: from, to: to, card: c.id };
+      s.players[from].gave++; s.players[to].got++; s.gives++; s.ex.gives++;
+      s.last = { t: "give", card: c, from: from, to: to };
+      pushLog(s, { t: "give", from: from, to: to, card: c });
+      s.ex.passed = [];                                       /* a give re-opens the round */
+      if (s.ex.gives >= MAX_GIVES) {                          /* pathological-wandering insurance */
+        pushLog(s, { t: "info", msg: MAX_GIVES + " cards circulated in one window — the table moves on" });
+        closeWindow(s);
+        return s;
+      }
+      s.ex.prompt = nextEligible(s, from, false, null);
+      return s;
+    }
+
+    if (a.t === "PASS") {
+      if (s.phase !== "exchange") return s;
+      var i = a.seat;
+      if (i == null || s.ex.prompt !== i) return s;
+      if (!s.players[i].stack.length) return s;
+      if (s.ex.passed.indexOf(i) >= 0) return s;
+      s.ex.passed.push(i); s.players[i].passed++;
+      s.last = { t: "pass", seat: i, auto: !!a.auto };
+      pushLog(s, { t: "pass", seat: i, auto: !!a.auto });
+      var elig = eligible(s);
+      var allPassed = elig.every(function (x) { return s.ex.passed.indexOf(x) >= 0; });
+      if (allPassed) closeWindow(s);
+      else s.ex.prompt = nextEligible(s, i, false, s.ex.passed);
+      return s;
+    }
+    return s;
+  }
+
+  /* ---------- robot brain: returns an action or null ---------- */
+  function botDecide(s, seat) {
+    var a = actor(s);
+    if (!a || a.seat !== seat) return null;
+    if (a.kind === "pick") return { t: "PICK" };
+    var tg = giveTargets(s, seat);                  /* loop-guard aware: no ping-pong offers */
+    if (!tg.length) return { t: "PASS", seat: seat };
+    var lastCard = s.players[seat].stack.length === 1;
+    var p = lastCard ? 0.34 : 0.68;                 /* sometimes bluff/hold */
+    if (Math.random() > p) return { t: "PASS", seat: seat };
+    tg.sort(function (x, y) { return s.players[y].stack.length - s.players[x].stack.length; });
+    var to = Math.random() < 0.72 ? tg[0] : tg[Math.floor(Math.random() * tg.length)];
+    return { t: "GIVE", from: seat, to: to };
+  }
+
+  /* ---------- analytics for the Step-1 summary ---------- */
+  function longestRun(stack) {
+    /* read from the TOP downwards: consecutive ranks, one lower each time */
+    if (!stack.length) return 0;
+    var best = 1, cur = 1;
+    for (var i = stack.length - 1; i > 0; i--) {
+      if (stack[i].r === stack[i - 1].r + 1) { cur++; if (cur > best) best = cur; }
+      else cur = 1;
+    }
+    return best;
+  }
+  function stats(s) {
+    return s.players.map(function (p) {
+      return {
+        seat: p.seat, name: p.name, kind: p.kind, cards: p.stack.length,
+        top: top(p), run: longestRun(p.stack),
+        picked: p.picked, gave: p.gave, got: p.got, passed: p.passed,
+        stack: p.stack.slice()
+      };
+    });
+  }
+
+  return {
+    SUITS: SUITS, RANKS: RANKS,
+    create: create, reduce: reduce, actor: actor,
+    top: top, topOf: topOf, legalTargets: legalTargets, eligible: eligible,
+    nextEligible: nextEligible, botDecide: botDecide,
+    giveTargets: giveTargets, wouldRewind: wouldRewind, arrangeKey: arrangeKey, MAX_GIVES: MAX_GIVES,
+    stats: stats, longestRun: longestRun, cardName: cardName, name: nm
+  };
+})();
+/*__ENGINE_END__*/
+/* ================================================================
+   UI HELPERS
+   ================================================================ */
+var $ = function (s, r) { return (r || document).querySelector(s); };
+var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+function esc(x) { return String(x).replace(/[&<>"']/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]; }); }
+function rect(e) { return e ? e.getBoundingClientRect() : { left: 0, top: 0, width: 0, height: 0, right: 0, bottom: 0 }; }
+
+var NAMES = ["Aarav","Meera","Rohan","Zoya","Kabir","Ishita","Dev","Naina","Farhan","Tara"];
+var UI = {
+  cfg: null, state: null, actions: [], viewer: 0, armed: false,
+  replay: null, botTimer: null, seatEls: [], pre: {}, finalState: null,
+  drag: null, toastTimer: null
+};
+
+/* ---------- colour derived from the palette only ---------- */
+function accent(i, n) {
+  var t = n > 1 ? i / (n - 1) : 0;
+  var h = 38 + t * 72;                                  /* gold 38° -> sage 110° */
+  var s = 24 + 12 * Math.sin(t * Math.PI);
+  var l = 60 + 10 * Math.cos(t * Math.PI * 1.6);
+  return "hsl(" + h.toFixed(0) + " " + s.toFixed(0) + "% " + l.toFixed(0) + "%)";
+}
+function initial(name) { return (name || "?").trim().charAt(0).toUpperCase() || "?"; }
+
+/* ---------- audio (tiny synth, zero assets) ---------- */
+var Snd = (function () {
+  var ctx = null, on = true;
+  function ac() {
+    if (!ctx) { try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { ctx = null; } }
+    if (ctx && ctx.state === "suspended") ctx.resume();
+    return ctx;
+  }
+  function tone(f, dur, type, vol, slide) {
+    if (!on) return; var c = ac(); if (!c) return;
+    var o = c.createOscillator(), g = c.createGain();
+    o.type = type || "sine"; o.frequency.setValueAtTime(f, c.currentTime);
+    if (slide) o.frequency.exponentialRampToValueAtTime(slide, c.currentTime + dur);
+    g.gain.setValueAtTime(0.0001, c.currentTime);
+    g.gain.exponentialRampToValueAtTime(vol || 0.09, c.currentTime + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + dur);
+    o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime + dur + 0.03);
+  }
+  function noise(dur, vol) {
+    if (!on) return; var c = ac(); if (!c) return;
+    var len = Math.floor(c.sampleRate * dur), buf = c.createBuffer(1, len, c.sampleRate), d = buf.getChannelData(0);
+    for (var i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 3);
+    var src = c.createBufferSource(); src.buffer = buf;
+    var f = c.createBiquadFilter(); f.type = "bandpass"; f.frequency.value = 2400; f.Q.value = 0.8;
+    var g = c.createGain(); g.gain.value = vol || 0.16;
+    src.connect(f); f.connect(g); g.connect(c.destination); src.start();
+  }
+  return {
+    set: function (v) { on = !!v; if (v) ac(); },
+    deal: function () { noise(0.10, 0.20); tone(320, 0.07, "triangle", 0.05); },
+    give: function () { tone(660, 0.10, "sine", 0.07); setTimeout(function () { tone(990, 0.16, "sine", 0.06); }, 70); },
+    pass: function () { tone(210, 0.09, "sine", 0.045); },
+    deny:  function () { tone(150, 0.14, "sawtooth", 0.04, 110); },
+    click: function () { tone(520, 0.05, "sine", 0.04); },
+    win:   function () { [523, 659, 784, 1046].forEach(function (f, i) { setTimeout(function () { tone(f, 0.30, "triangle", 0.075); }, i * 110); }); }
+  };
+})();
+
+/* ---------- card markup ---------- */
+function cardHTML(c, size) {
+  if (!c) return "";
+  var s = MK.SUITS[c.s], r = MK.RANKS[c.r];
+  return '<div class="card ' + (size || "sm") + " " + (s.red ? "red" : "blk") + '">' +
+    '<div class="corner tl"><span>' + r + "</span><span>" + s.g + "</span></div>" +
+    '<div class="pip">' + s.g + "</div>" +
+    '<div class="corner br"><span>' + r + "</span><span>" + s.g + "</span></div></div>";
+}
+function backHTML(size) { return '<div class="card ' + (size || "sm") + ' back"><div class="emblem"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#donkey" xlink:href="#donkey"></use></svg></div></div>'; }
+function miniCard(c) {
+  if (!c) return '<span class="mini">—</span>';
+  var s = MK.SUITS[c.s];
+  return '<span class="mini" style="color:' + (s.red ? "var(--gold-deep)" : "var(--ink)") + '">' + MK.RANKS[c.r] + s.g + "</span>";
+}
+
+/* ---------- toasts + fx ---------- */
+function toast(msg, gold) {
+  $$(".toast").forEach(function (t) { t.remove(); });
+  var d = document.createElement("div");
+  d.className = "toast" + (gold ? " gold" : ""); d.innerHTML = msg;
+  document.body.appendChild(d);
+  clearTimeout(UI.toastTimer);
+  UI.toastTimer = setTimeout(function () { d.style.transition = "opacity .3s, transform .3s"; d.style.opacity = "0"; d.style.transform = "translate(-50%,10px)"; setTimeout(function () { d.remove(); }, 320); }, 2100);
+}
+function sparkle(x, y, color) {
+  var layer = $("#fx");
+  for (var i = 0; i < 10; i++) {
+    var d = document.createElement("div");
+    var sz = 4 + Math.random() * 6;
+    d.style.cssText = "position:fixed;left:" + x + "px;top:" + y + "px;width:" + sz + "px;height:" + sz + "px;border-radius:50%;z-index:91;pointer-events:none;background:" + (color || "#E3CFA3");
+    layer.appendChild(d);
+    var ang = (Math.PI * 2 * i) / 10 + Math.random() * 0.5, dist = 26 + Math.random() * 46;
+    d.animate([
+      { transform: "translate(-50%,-50%) scale(1)", opacity: 1 },
+      { transform: "translate(" + (Math.cos(ang) * dist - 50) + "%," + (Math.sin(ang) * dist - 50) + "%) scale(0)", opacity: 0 }
+    ], { duration: 520 + Math.random() * 260, easing: "cubic-bezier(.2,.8,.3,1)" }).onfinish = function () { this.effect.target.remove(); };
+  }
+}
+function flyCard(card, from, to, faceUp, dur) {
+  if (!from || !to || !to.width) return;
+  var layer = $("#fx");
+  var w = to.width, h = to.height;
+  var el = document.createElement("div");
+  el.innerHTML = faceUp === false ? backHTML() : cardHTML(card);
+  var c = el.firstChild;
+  c.classList.add("fx-card");
+  c.style.width = w + "px"; c.style.left = from.left + "px"; c.style.top = from.top + "px";
+  layer.appendChild(c);
+  var dx = to.left - from.left, dy = to.top - from.top;
+  var sx = from.width / w || 1, sy = from.height / h || 1;
+  var D = (dur || 470) / (UI.cfg ? UI.cfg.settings.speed : 1);
+  c.animate([
+    { transform: "translate(0,0) scale(" + sx + "," + sy + ") rotate(-7deg)", opacity: 1 },
+    { transform: "translate(" + dx * 0.5 + "px," + (dy * 0.5 - 70) + "px) scale(" + ((sx + 1) / 2) + ") rotate(8deg)", opacity: 1, offset: 0.55 },
+    { transform: "translate(" + dx + "px," + dy + "px) scale(1,1) rotate(0deg)", opacity: 1 }
+  ], { duration: D, easing: "cubic-bezier(.22,.75,.24,1)" }).onfinish = function () { c.remove(); };
+}
+/* ================================================================
+   TABLE RENDER
+   ================================================================ */
+function seatGeom(n) {
+  var w = window.innerWidth;
+  var base = n <= 3 ? 58 : n <= 5 ? 52 : n <= 7 ? 46 : n <= 9 ? 42 : 39;
+  if (w < 900) base = Math.round(base * 0.86);
+  if (w < 560) base = Math.round(base * 0.84);
+  return { sw: base, rx: n <= 2 ? 26 : n <= 4 ? 34 : 37, ry: n <= 2 ? 30 : n <= 4 ? 32 : 34 };
+}
+function buildSeats() {
+  var host = $("#seats"); host.innerHTML = ""; UI.seatEls = [];
+  for (var i = 0; i < UI.state.n; i++) {
+    var d = document.createElement("div");
+    d.className = "seat"; d.dataset.seat = i;
+    host.appendChild(d); UI.seatEls[i] = d;
+  }
+  positionSeats();
+}
+function positionSeats() {
+  if (!UI.state) return;
+  var n = UI.state.n, g = seatGeom(n);
+  /* fixed seating: seat 0 sits at the bottom, the table runs clockwise.
+     No rotation-on-viewer in hot-seat mode — players keep their physical spot. */
+  var v = 0;
+  $("#table").style.setProperty("--sw", g.sw + "px");
+  for (var i = 0; i < n; i++) {
+    var el = UI.seatEls[i]; if (!el) continue;
+    var t = ((90 + (i - v) * (360 / n)) * Math.PI) / 180;
+    el.style.left = (50 + g.rx * Math.cos(t)).toFixed(2) + "%";
+    el.style.top = (47 + g.ry * Math.sin(t)).toFixed(2) + "%";
+    el.style.width = Math.round(g.sw * 1.9) + "px";
+    el.style.setProperty("--sw", g.sw + "px");
+  }
+  var dw = Math.max(46, Math.min(70, Math.round(g.sw * 1.24)));
+  $("#deck").style.setProperty("--dw", dw + "px");
+}
+function renderSeats() {
+  var s = UI.state, a = MK.actor(s), n = s.n;
+  var myTurn = a && s.players[a.seat].kind === "human" && UI.viewer === a.seat && !UI.replay;
+  var targets = (a && a.kind === "exchange" && myTurn) ? MK.giveTargets(s, a.seat) : [];
+  for (var i = 0; i < n; i++) {
+    var el = UI.seatEls[i], p = s.players[i], t = MK.top(p);
+    if (!el) continue;
+    var depth = p.stack.length ? Math.min(4, Math.ceil((p.stack.length - 1) / 3)) : 0;
+    var layers = "";
+    for (var k = 0; k < depth; k++)
+      layers += '<div class="layer" style="transform:translate(' + (k % 2 ? -2.5 : 2.5) + 'px,' + (-k * 3.2) + 'px) rotate(' + (k % 2 ? -1.6 : 1.6) + 'deg)"></div>';
+    var face = t ? cardHTML(t) :
+      '<div style="position:absolute;inset:0;border-radius:9px;border:1.5px dashed rgba(247,244,237,.42);display:grid;place-items:center;color:rgba(247,244,237,.6);font-size:9px;font-weight:800;letter-spacing:.1em">EMPTY</div>';
+    var passed = s.phase === "exchange" && s.ex.passed.indexOf(i) >= 0;
+    var tags = "";
+    if (a && a.seat === i && !UI.replay) tags += '<span class="tag turn">' + (a.kind === "pick" ? "picks" : "to act") + "</span>";
+    else if (passed) tags += '<span class="tag passed">passed</span>';
+    if (i === UI.viewer && !UI.replay) tags += '<span class="tag you">you</span>';
+    if (p.kind === "bot") tags += '<span class="tag bot">bot</span>';
+
+    el.innerHTML =
+      '<div class="seat-stack">' + layers + '<div class="topcard">' + face + "</div></div>" +
+      '<div class="seat-plate"><div class="avatar" style="background:' + accent(i, n) + '">' + esc(initial(p.name)) + "</div>" +
+      '<span class="nm">' + esc(p.name) + "</span>" +
+      '<span class="ct">' + p.stack.length + "</span></div>" +
+      '<div class="seat-tags">' + tags + "</div>";
+
+    el.className = "seat" +
+      (a && a.seat === i && !UI.replay ? " is-turn" : "") +
+      (targets.indexOf(i) >= 0 ? " is-target" : "") +
+      (myTurn && a.kind === "exchange" && i === a.seat ? " is-source" : "") +
+      (passed ? " dim" : "") +
+      (targets.indexOf(i) >= 0 ? " clickable" : "");
+  }
+}
+function renderCenter() {
+  var s = UI.state, a = MK.actor(s);
+  var d = $("#deck");
+  if (s.deck.length) {
+    d.innerHTML = backHTML() + backHTML() + backHTML();
+    d.classList.toggle("pickable", !!(a && a.kind === "pick" && s.players[a.seat].kind === "human" && UI.viewer === a.seat && !UI.replay));
+  } else {
+    d.innerHTML = '<div style="position:absolute;inset:0;border-radius:9px;border:1.5px dashed rgba(247,244,237,.4);display:grid;place-items:center;color:rgba(247,244,237,.65);font-size:9px;font-weight:800;letter-spacing:.1em">EMPTY</div>';
+    d.classList.remove("pickable");
+  }
+  $("#deck-count").textContent = s.deck.length + " left";
+  $("#st-deck").textContent = s.deck.length;
+  $("#st-picks").textContent = s.picks;
+  $("#st-gives").textContent = s.gives;
+  var ph = $("#st-phase");
+  if (s.phase === "complete") ph.innerHTML = '<span class="dot" style="background:var(--gold-deep)"></span> Dealt';
+  else if (s.phase === "exchange") ph.innerHTML = '<span class="dot" style="background:var(--gold)"></span> Exchange';
+  else ph.innerHTML = '<span class="dot"></span> Dealing';
+
+  var msg;
+  if (s.phase === "complete") msg = "Dealing complete — <b>52 cards</b> locked into stacks";
+  else if (a && a.kind === "pick") msg = "<b>" + esc(MK.name(s, a.seat)) + "</b> picks from the middle";
+  else if (a && a.kind === "exchange") {
+    var tg = MK.giveTargets(s, a.seat);
+    msg = "Exchange window — <b>" + esc(MK.name(s, a.seat)) + "</b> " +
+      (tg.length ? "can give " + miniCard(MK.topOf(s, a.seat)) + " to " + tg.length + " player" + (tg.length > 1 ? "s" : "") : "has no legal give");
+  } else msg = "…";
+  $("#center-msg").innerHTML = msg;
+}
+/* ================================================================
+   DOCK / LOG / MASTER RENDER
+   ================================================================ */
+function fanLocked() {
+  var s = UI.state, a = MK.actor(s);
+  if (UI.replay) return false;
+  if (!UI.cfg.settings.curtain) return false;
+  return !(a && s.players[a.seat].kind === "human" && UI.viewer === a.seat);
+}
+function renderDock() {
+  var s = UI.state, a = MK.actor(s), n = s.n, v = s.players[UI.viewer], locked = fanLocked();
+  $("#dock-av").textContent = initial(v.name);
+  $("#dock-av").style.background = accent(UI.viewer, n);
+  $("#dock-name").textContent = v.name + (v.kind === "bot" ? " 🤖" : "");
+  /* curtain-off hot-seat: let anyone peek at any stack from the dock */
+  var vs = $("#dock-viewswitch");
+  vs.innerHTML = (!UI.replay && UI.cfg && !UI.cfg.settings.curtain)
+    ? s.players.map(function (p, i) {
+        return '<button class="pdot' + (i === UI.viewer ? " now" : "") + '" data-view="' + i +
+          '" title="Show ' + esc(p.name) + '’s stack" style="border-color:' + accent(i, n) + '">' + esc(initial(p.name)) + "</button>";
+      }).join("")
+    : "";
+  var t = MK.top(v);
+  $("#dock-sub").innerHTML = locked
+    ? "stack hidden · pass the device"
+    : (v.stack.length + " card" + (v.stack.length === 1 ? "" : "s") + (t ? " · top " + miniCard(t) : "") +
+       (a && a.seat === UI.viewer && !UI.replay ? " · <b class='gold-txt'>your call</b>" : ""));
+
+  /* --- fan --- */
+  var fan = $("#fan"), count = v.stack.length;
+  if (!count) {
+    fan.innerHTML = '<div class="empty">No cards yet — your stack starts with your first pick from the middle pile.</div>';
+  } else {
+    var fw = count <= 8 ? 58 : count <= 14 ? 50 : count <= 22 ? 43 : 35;
+    if (window.innerWidth < 560) fw = Math.round(fw * 0.86);
+    var ov = count <= 10 ? fw * 0.56 : count <= 20 ? fw * 0.70 : fw * 0.80;
+    var shown = locked ? Math.min(count, 14) : count;
+    var html = "";
+    for (var i = 0; i < shown; i++) {
+      var isTop = i === count - 1;
+      html += '<div class="fslot' + (isTop && !locked ? " is-top" : "") + (isTop && !locked ? " giveable" : "") + (isTop && !locked && UI.armed ? " armed" : "") +
+        '" data-idx="' + i + '" style="--fw:' + fw + 'px;margin-left:' + (i ? -ov + "px" : "0") + ';z-index:' + (i + 1) + '">' +
+        (locked ? backHTML("md").replace('class="card md back"', 'class="card md back" style="width:' + fw + 'px"') : cardHTML(v.stack[i], "md").replace('class="card md', 'style="width:' + fw + 'px" class="card md')) +
+        "</div>";
+    }
+    if (locked && count > shown) html += '<div class="empty" style="padding:26px 10px">+' + (count - shown) + " more</div>";
+    fan.innerHTML = html;
+    if (!locked && count > 12) fan.scrollLeft = fan.scrollWidth;
+  }
+
+  /* --- replay controls take over the dock --- */
+  if (UI.replay) {
+    var R = UI.replay, pct = R.acts.length ? (R.i / R.acts.length * 100) : 0;
+    $("#action-line").innerHTML = "▶ <b>Replaying the deal</b> — move <b>" + R.i + "</b> of " + R.acts.length + ". The table above re-deals itself from the same seed.";
+    $("#action-row").innerHTML =
+      '<button class="btn btn-gold btn-sm" data-rp="' + (R.playing ? "pause" : "play") + '">' + (R.playing ? "⏸ Pause" : "▶ Play") + "</button>" +
+      '<button class="btn btn-sm" data-rp="step">⏭ Step</button>' +
+      '<button class="btn btn-sm" data-rp="speed">' + R.speed + "× speed</button>" +
+      '<button class="btn btn-ghost btn-sm" data-rp="stop">Exit replay</button>';
+    $("#pass-track").innerHTML = '<div style="flex:1;height:6px;border-radius:99px;background:rgba(46,56,44,.16);overflow:hidden;min-width:90px"><i style="display:block;height:100%;width:' + pct.toFixed(1) + '%;background:linear-gradient(90deg,var(--sage),var(--gold));transition:width .18s linear"></i></div>';
+    return;
+  }
+
+  /* --- action line + buttons --- */
+  var ui = actionUI();
+  $("#action-line").innerHTML = ui.line;
+  $("#action-row").innerHTML = ui.btns.map(function (b) {
+    return '<button class="btn ' + (b.cls || "") + '" data-act="' + b.act + '"' + (b.dis ? " disabled" : "") + ">" + b.label + "</button>";
+  }).join("");
+
+  /* --- pass tracker --- */
+  var pt = "";
+  for (var j = 0; j < n; j++) {
+    var p = s.players[j], has = p.stack.length > 0;
+    var passed = s.phase === "exchange" && s.ex.passed.indexOf(j) >= 0;
+    var now = a && a.seat === j && s.phase === "exchange";
+    pt += '<span class="pdot' + (passed ? " done" : "") + (now ? " now" : "") + (!has ? " skip" : "") +
+      '" title="' + esc(p.name) + (has ? "" : " · no cards yet") + '" style="' + (has ? "border-color:" + accent(j, n) : "") + '">' +
+      (passed ? "✓" : initial(p.name)) + "</span>";
+  }
+  $("#pass-track").innerHTML = s.phase === "exchange"
+    ? '<span style="font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-right:3px">Window</span>' + pt
+    : (s.phase === "complete" ? '<span style="font-size:11.5px;color:var(--ink-3);font-weight:650">Step 1 complete · stacks locked</span>' : "");
+}
+function actionUI() {
+  var s = UI.state, a = MK.actor(s);
+  if (UI.replay) return { line: "▶ Replaying the deal — the table below is a live replay of every pick and give.", btns: [] };
+  if (!a) return { line: "Dealing complete. Every card is locked into a stack.", btns: [] };
+  var me = a.seat, p = s.players[me];
+  if (p.kind === "bot") return { line: "🤖 <b>" + esc(p.name) + "</b> is " + (a.kind === "pick" ? "picking from the middle pile…" : "deciding whether to give…"), btns: [] };
+  /* no legal give + auto-pass on -> nobody has a decision here, don't offer a hand-off */
+  if (a.kind === "exchange" && UI.cfg.settings.autopass && !MK.giveTargets(s, me).length)
+    return { line: "<b>" + esc(p.name) + "</b> has no legal give — the table passes on automatically…", btns: [] };
+  if (UI.viewer !== me) {
+    if (UI.cfg.settings.curtain)
+      return { line: "Waiting for <b>" + esc(p.name) + "</b> — " + (a.kind === "pick" ? "their pick" : "their exchange decision") + ".", btns: [{ cls: "btn-sage", label: "I’m " + esc(p.name) + " — reveal", act: "curtain" }] };
+    return { line: "<b>" + esc(p.name) + "</b> to act.", btns: [] };
+  }
+  if (a.kind === "pick")
+    return {
+      line: "Your pick — take the <b>top card</b> of the middle pile. It lands <b>on top</b> of your stack and becomes your public card. <kbd>Space</kbd>",
+      btns: [{ cls: "btn-gold", label: "🂠 Pick the top card", act: "pick" }]
+    };
+  var t = MK.topOf(s, me), tg = MK.giveTargets(s, me), raw = MK.legalTargets(s, me);
+  if (tg.length) {
+    var names = tg.map(function (i) { return esc(s.players[i].name) + " (" + miniCard(MK.topOf(s, i)) + ")"; }).join(" or ");
+    return {
+      line: "Exchange window — you may give <b>" + miniCard(t) + "</b> to <b>" + names + "</b>. It lands <b>on top</b> of their stack, so their public card becomes " + miniCard(t) +
+        (t.r + 1 < 13 ? " — and anyone holding an <b>" + MK.RANKS[t.r + 1] + "</b> can then give to them." : ".") +
+        " Giving is optional. <kbd>G</kbd> give · <kbd>P</kbd> pass",
+      btns: [{ cls: "btn-gold", label: "Give " + MK.cardName(t) + " →", act: "arm" }, { cls: "", label: "Pass", act: "pass" }]
+    };
+  }
+  var why = raw.length
+    ? "the only seat that could take it would hand it straight back — the table blocks that loop"
+    : "nobody’s top card is exactly one rank lower";
+  return {
+    line: "Exchange window — " + (t ? "<b>" + miniCard(t) + "</b> has no usable give: " + why : "you hold no cards") + ". Pass, and the window closes once every other holder has passed too.",
+    btns: [{ cls: "btn-sage", label: "Pass", act: "pass" }]
+  };
+}
+function renderLog() {
+  var s = UI.state, out = "", n = Math.min(s.log.length, 44);
+  for (var i = 0; i < n; i++) {
+    var e = s.log[i];
+    if (e.t === "pick") out += '<div class="li"><span class="ic">⬆</span><div><b>' + esc(MK.name(s, e.seat)) + "</b> picked " + miniCard(e.card) + ' <span style="color:var(--ink-3)">from the middle</span></div></div>';
+    else if (e.t === "give") out += '<div class="li"><span class="ic" style="background:rgba(200,169,107,.35)">⇄</span><div><b>' + esc(MK.name(s, e.from)) + "</b> gave " + miniCard(e.card) + " to <b>" + esc(MK.name(s, e.to)) + "</b></div></div>";
+    else if (e.t === "reject") out += '<div class="li"><span class="ic" style="background:rgba(180,103,79,.22)">✕</span><div><b>' + esc(MK.name(s, e.from)) + "</b> tried to give " + miniCard(e.card) + " to <b>" + esc(MK.name(s, e.to)) + '</b> <span style="color:var(--ink-3);font-size:11px">· refused (' + (e.reason === "takeback" ? "take-back" : "would rewind the table") + ")</span></div></div>";
+    else if (e.t === "pass") out += '<div class="li"><span class="ic">⏭</span><div><b>' + esc(MK.name(s, e.seat)) + "</b> passed" + (e.auto ? ' <span style="color:var(--ink-3);font-size:11px">· nothing to give</span>' : "") + "</div></div>";
+    else if (e.t === "info") out += '<div class="li info">' + esc(e.msg) + "</div>";
+    else if (e.t === "end") out += '<div class="li info">✦ Dealing complete — 52 cards locked into stacks ✦</div>';
+  }
+  $("#loglist").innerHTML = out || '<div class="li info">No moves yet</div>';
+  $("#log-n").textContent = s.log.length + " events";
+}
+function syncViewer() {
+  var s = UI.state, a = MK.actor(s);
+  if (!a) return;
+  if (UI.replay) { UI.viewer = a.seat; return; }
+  if (!UI.cfg.settings.curtain && s.players[a.seat].kind === "human") UI.viewer = a.seat;
+}
+function render() {
+  if (!UI.state) return;
+  positionSeats(); renderSeats(); renderCenter(); renderDock(); renderLog();
+}
+
+/* ================================================================
+   ACTIONS + FX
+   ================================================================ */
+function applyWithFx(a) {
+  var s = UI.state;
+  var deckR = rect($("#deck"));
+  var seatR = {};
+  UI.seatEls.forEach(function (el, i) { seatR[i] = rect($(".topcard", el) || el); });
+  MK.reduce(s, a);
+  syncViewer();
+  UI.armed = false;
+  render();
+  var L = s.last, sp = UI.cfg ? UI.cfg.settings.speed : 1;
+  if (!L) return;
+  if (L.t === "pick") {
+    var to = rect($(".topcard", UI.seatEls[L.seat]) || UI.seatEls[L.seat]);
+    flyCard(L.card, deckR, to, false, 460);
+    Snd.deal();
+  } else if (L.t === "give") {
+    var to2 = rect($(".topcard", UI.seatEls[L.to]) || UI.seatEls[L.to]);
+    flyCard(L.card, seatR[L.from], to2, true, 520);
+    var pl = rect($(".seat-plate", UI.seatEls[L.to]));
+    setTimeout(function () { sparkle(pl.left + pl.width / 2, pl.top, "#E3CFA3"); }, 380 / sp);
+    Snd.give();
+  } else if (L.t === "reject") {
+    var rj = UI.seatEls[L.to];
+    if (rj) { rj.classList.add("shake"); setTimeout(function () { rj.classList.remove("shake"); }, 430); }
+    Snd.deny();
+    toast(L.reason === "takeback"
+      ? "No take-backs — " + miniCard(L.card) + " just came from <b>" + esc(MK.name(s, L.to)) + "</b>. Somewhere else, or pass."
+      : "Blocked — that give would rewind the table to a position this window already saw. That’s the endless-loop guard.");
+  } else if (L.t === "pass") Snd.pass();
+}
+function dispatch(a) {
+  if (UI.replay) return;
+  UI.actions.push(a);
+  applyWithFx(a);
+  post();
+}
+function post() {
+  syncCurtain(); scheduleBots(); scheduleAuto(); checkComplete();
+}
+/* does the seat being prompted actually have a choice to make? */
+function needsDecision() {
+  var s = UI.state, a = MK.actor(s);
+  if (!a) return false;
+  if (s.players[a.seat].kind === "bot") return false;
+  if (a.kind === "pick") return true;
+  return MK.giveTargets(s, a.seat).length > 0;
+}
+function scheduleAuto() {
+  clearTimeout(UI.autoTimer);
+  if (UI.replay || !UI.cfg || !UI.cfg.settings.autopass) return;
+  var s = UI.state, a = MK.actor(s);
+  if (!a || a.kind !== "exchange") return;
+  if (s.players[a.seat].kind !== "human") return;
+  if (MK.giveTargets(s, a.seat).length) return;           /* a real choice -> wait for the human */
+  if ($('.overlay[data-ov="curtain"]')) return;
+  UI.autoTimer = setTimeout(function () {
+    var s2 = UI.state, a2 = MK.actor(s2);
+    if (!a2 || a2.kind !== "exchange" || a2.seat !== a.seat) return;
+    if (MK.giveTargets(s2, a.seat).length) return;
+    dispatch({ t: "PASS", seat: a.seat, auto: true });
+  }, 340 / (UI.cfg.settings.speed || 1));
+}
+function syncCurtain() {
+  if (UI.replay) { closeOverlay("curtain"); UI.curtainSeat = -1; return; }
+  var s = UI.state, a = MK.actor(s);
+  /* nobody has a real decision AND auto-pass is on -> skip the pointless hand-off.
+     With auto-pass off the curtain must still appear, or the table would freeze. */
+  if (a && a.kind === "exchange" && UI.cfg.settings.autopass && !needsDecision()) { closeOverlay("curtain"); UI.curtainSeat = -1; return; }
+  if (!a || !UI.cfg.settings.curtain || s.players[a.seat].kind === "bot" || UI.viewer === a.seat || s.phase === "complete") {
+    closeOverlay("curtain"); UI.curtainSeat = -1; return;
+  }
+  if (UI.curtainSeat === a.seat && $('.overlay[data-ov="curtain"]')) return;
+  UI.curtainSeat = a.seat;
+  var p = s.players[a.seat], n = s.n;
+  openOverlay("curtain",
+    '<div class="modal curtain-card">' +
+    '<div class="big-av" style="background:' + accent(a.seat, n) + '">' + esc(initial(p.name)) + "</div>" +
+    "<h2>" + esc(p.name) + "</h2>" +
+    '<div class="act">' + (a.kind === "pick" ? "your pick from the middle" : "exchange window — your call") + "</div>" +
+    '<p style="font-size:13px;color:var(--ink-3);margin:0 0 20px;line-height:1.55">Hand the device over. Your hidden cards stay covered until you tap below — only the public top cards of every stack are on the table.</p>' +
+    '<button class="btn btn-gold btn-lg" data-act="reveal" style="width:100%">Reveal my stack</button>' +
+    "</div>");
+}
+function scheduleBots() {
+  clearTimeout(UI.botTimer);
+  if (UI.replay) return;
+  var s = UI.state, a = MK.actor(s);
+  if (!a || s.players[a.seat].kind !== "bot") return;
+  var sp = UI.cfg.settings.speed;
+  var delay = ((a.kind === "pick" ? 700 : 1050) + Math.random() * 260) / sp;
+  UI.botTimer = setTimeout(function () {
+    if (UI.replay) return;
+    var a2 = MK.actor(UI.state);
+    if (!a2) return;
+    if (a2.seat !== a.seat || a2.kind !== a.kind) return scheduleBots();
+    var act = MK.botDecide(UI.state, a.seat);
+    if (act) dispatch(act); else scheduleBots();
+  }, delay);
+}
+function checkComplete() {
+  var s = UI.state;
+  if (s.phase === "complete" && !UI.resultsShown) {
+    UI.resultsShown = true;
+    closeOverlay("curtain");
+    Snd.win();
+    setTimeout(function () {
+      UI.seatEls.forEach(function (el, i) {
+        if (!s.players[i].stack.length) return;
+        var r = rect(el);
+        setTimeout(function () { sparkle(r.left + r.width / 2, r.top + r.height * 0.3, i % 2 ? "#E3CFA3" : "#F7F4ED"); }, i * 90);
+      });
+    }, 200);
+    setTimeout(showResults, 1250);
+  }
+}
+/* ================================================================
+   OVERLAYS · RESULTS · REPLAY
+   ================================================================ */
+function openOverlay(id, html) {
+  var ex = $('#overlay-root .overlay[data-ov="' + id + '"]'); if (ex) ex.remove();
+  var d = document.createElement("div");
+  d.className = "overlay"; d.dataset.ov = id; d.innerHTML = html;
+  $("#overlay-root").appendChild(d);
+  return d;
+}
+function closeOverlay(id) { var d = $('#overlay-root .overlay[data-ov="' + id + '"]'); if (d) d.remove(); if (id === "curtain") UI.curtainSeat = -1; }
+function closeAllOverlays() { $$("#overlay-root .overlay").forEach(function (d) { d.remove(); }); UI.curtainSeat = -1; }
+
+function showResults() {
+  var s = UI.state, st = MK.stats(s);
+  var sorted = st.slice().sort(function (a, b) { return b.cards - a.cards || b.run - a.run || a.seat - b.seat; });
+  var max = Math.max.apply(null, sorted.map(function (x) { return x.cards; }).concat([1]));
+  var rows = sorted.map(function (x, i) {
+    return "<tr><td class='rank'>" + (i + 1) + "</td>" +
+      "<td><div class='who'><span class='avatar' style='background:" + accent(x.seat, s.n) + "'>" + esc(initial(x.name)) + "</span>" + esc(x.name) +
+      (x.kind === "bot" ? " <span class='tag bot' style='font-size:8.5px'>bot</span>" : "") +
+      (i === 0 ? " <span class='trophy'>biggest stack</span>" : "") + "</div></td>" +
+      "<td><b style='font-size:15px'>" + x.cards + "</b><div class='res-bar'><i style='width:" + (x.cards / max * 100).toFixed(0) + "%'></i></div></td>" +
+      "<td>" + miniCard(x.top) + "</td>" +
+      "<td><b>" + x.run + "</b> <span style='color:var(--ink-3);font-size:11px'>deep</span></td>" +
+      "<td style='color:var(--ink-3);font-size:12px'>" + x.picked + " · " + x.gave + " · " + x.got + "</td></tr>";
+  }).join("");
+  openOverlay("results",
+    '<div class="modal">' +
+    '<div class="pill" style="margin-bottom:12px"><span class="dot" style="background:var(--gold-deep)"></span> Step 1 finished</div>' +
+    "<h2>The dealing is done</h2>" +
+    '<p class="lead">52 cards, <b>' + s.picks + "</b> picks, <b>" + s.gives + "</b> cards handed over across <b>" + s.ex.windows +
+    "</b> exchange windows. Everyone keeps their stack — “best run” counts how many consecutive descending ranks sit on top of a stack, reading down.</p>" +
+    "<table class='res-table'><thead><tr><th></th><th>Player</th><th>Cards</th><th>Top</th><th>Best run</th><th>picked·gave·got</th></tr></thead><tbody>" + rows + "</tbody></table>" +
+    '<div class="action-line" style="margin-top:18px"><b>Step 2 · Donkeyyy</b> is not wired yet — these stacks are exactly what it will start from. Send me the Step 2 rules and the play phase drops straight on top of this table.</div>' +
+    '<div class="modal-foot">' +
+    '<button class="btn" data-act="rp-replay">▶ Watch the replay</button>' +
+    '<button class="btn" data-act="rp-again">Deal again (new shuffle)</button>' +
+    '<button class="btn btn-gold" data-act="rp-lobby">Back to lobby</button>' +
+    "</div></div>");
+}
+function rulesHTML() {
+  return "<ol class='rules-list'>" +
+    "<li><b>52 cards</b>, no jokers, shuffled face-down in the middle.</li>" +
+    "<li>Random starter, then <b>clockwise</b>: pick the top card, put it <b>on top</b> of your stack.</li>" +
+    "<li>Only each stack’s <b>top card is public</b>. The rest is hidden.</li>" +
+    "<li>After every pick an <b>exchange window</b> opens. You may give your <b>top card</b> to any player whose <b>top card is exactly one rank lower</b> — <b>suit is ignored</b>, and there is no 2→A wrap (so a 2 can never be given, and nothing can be given to a 2).</li>" +
+    "<li>The given card is a <b>permanent transfer</b> and lands <b>on top</b> of the receiver’s stack, so their public card changes and <b>chains</b> become possible.</li>" +
+    "<li>Giving is <b>voluntary and unlimited</b>. The window closes only when <b>every player still holding cards has passed</b> — then the next player picks.</li>" +
+    "<li>Repeat until the middle pile is empty. Then <b>Step 2 · Donkeyyy</b>.</li>" +
+    "</ol>" +
+    "<div class='legend' style='margin-top:16px'><span><b>Controls</b></span><span><kbd>Space</kbd> pick / primary</span><span><kbd>G</kbd> arm a give</span><span><kbd>P</kbd> pass</span><span><kbd>L</kbd> log</span><span><kbd>H</kbd> help</span><span><kbd>M</kbd> mute</span><span>drag your top card onto a glowing seat to give</span></div>";
+}
+function showHelp() { openOverlay("help", '<div class="modal"><h2>How the table works</h2><p class="lead">Step 1 · The Dealing — the complete rule set this build enforces.</p>' + rulesHTML() + '<div class="modal-foot"><button class="btn btn-gold" data-act="close-help">Got it</button></div></div>'); }
+function showExit() {
+  openOverlay("exit", '<div class="modal" style="max-width:430px"><h2>Leave the table?</h2><p class="lead">This dealing will be abandoned. Your lobby seats are kept.</p><div class="modal-foot"><button class="btn btn-ghost" data-act="close-exit">Keep playing</button><button class="btn btn-sage" data-act="quit">Leave table</button></div></div>');
+}
+
+/* ---------- replay ---------- */
+function startReplay() {
+  if (!UI.actions.length) { toast("Nothing to replay yet"); return; }
+  UI.finalState = UI.state;
+  UI.replay = { acts: UI.actions.slice(), i: 0, playing: true, speed: 1, timer: null };
+  UI.state = MK.create(UI.cfg);
+  UI.viewer = UI.state.turn;
+  closeAllOverlays(); clearTimeout(UI.botTimer);
+  buildSeats(); render(); replayTick();
+}
+function replayTick() {
+  var R = UI.replay; if (!R) return;
+  if (!R.playing) return;
+  if (R.i >= R.acts.length) { R.playing = false; render(); setTimeout(function () { toast("Replay finished — the table is back to its final state", true); }, 200); return; }
+  var a = R.acts[R.i++];
+  applyWithFx(a); render();
+  var base = a.t === "PICK" ? 620 : a.t === "GIVE" ? 780 : 380;
+  R.timer = setTimeout(replayTick, base / R.speed / (UI.cfg.settings.speed || 1));
+}
+function handleReplay(cmd) {
+  var R = UI.replay; if (!R) return;
+  if (cmd === "play") { R.playing = true; render(); replayTick(); }
+  else if (cmd === "pause") { R.playing = false; clearTimeout(R.timer); render(); }
+  else if (cmd === "step") { R.playing = false; clearTimeout(R.timer); if (R.i < R.acts.length) { applyWithFx(R.acts[R.i++]); render(); } }
+  else if (cmd === "speed") { R.speed = R.speed >= 4 ? 1 : R.speed * 2; render(); }
+  else if (cmd === "stop") {
+    clearTimeout(R.timer); UI.replay = null; UI.state = UI.finalState; UI.viewer = 0;
+    buildSeats(); render(); post();
+    if (UI.state && UI.state.phase === "complete") showResults();   /* don't strand the player on a dead table */
+  }
+}
+/* ================================================================
+   INPUT
+   ================================================================ */
+function canAct() {
+  if (UI.replay || !UI.state) return false;
+  var s = UI.state, a = MK.actor(s);
+  if (!a) return false;
+  if (s.players[a.seat].kind !== "human") return false;
+  if (UI.viewer !== a.seat) return false;
+  if ($('.overlay[data-ov="curtain"]')) return false;
+  return true;
+}
+function doPick() {
+  if (!canAct()) return;
+  var a = MK.actor(UI.state);
+  if (a.kind !== "pick") return;
+  dispatch({ t: "PICK" });
+}
+function doPass() {
+  if (!canAct()) return;
+  var a = MK.actor(UI.state);
+  if (a.kind !== "exchange") return;
+  dispatch({ t: "PASS", seat: a.seat });
+}
+function tryGive(to) {
+  if (!canAct()) return;
+  var s = UI.state, a = MK.actor(s);
+  if (a.kind !== "exchange" || to === a.seat) return;
+  if (MK.legalTargets(s, a.seat).indexOf(to) < 0) {
+    var el = UI.seatEls[to];
+    if (el) { el.classList.add("shake"); setTimeout(function () { el.classList.remove("shake"); }, 430); }
+    Snd.deny();
+    var tt = MK.topOf(s, to), mine = MK.topOf(s, a.seat);
+    toast(tt
+      ? "Illegal — " + esc(MK.name(s, to)) + "’s top card is " + MK.cardName(tt) + ", yours is " + MK.cardName(mine) + ". It must be <b>exactly one rank lower</b>."
+      : esc(MK.name(s, to)) + " holds no cards, so they can’t receive.");
+    return;
+  }
+  dispatch({ t: "GIVE", from: a.seat, to: to });
+}
+function armGive() {
+  if (!canAct()) return;
+  var s = UI.state, a = MK.actor(s);
+  if (a.kind !== "exchange") return;
+  if (!MK.giveTargets(s, a.seat).length) {
+    Snd.deny();
+    toast(MK.legalTargets(s, a.seat).length
+      ? "Every receiver would bounce " + MK.cardName(MK.topOf(s, a.seat)) + " straight back — that’s the loop the table blocks. Pass instead."
+      : "No legal receiver — nobody’s top card is exactly one rank below " + MK.cardName(MK.topOf(s, a.seat)));
+    return;
+  }
+  UI.armed = !UI.armed;
+  Snd.click(); render();
+  if (UI.armed) toast("Now tap a glowing seat — or drag your top card onto it", true);
+}
+function primary() {
+  if (!UI.state) return;
+  var ov = $('.overlay[data-ov="curtain"]');
+  if (ov) { revealViewer(); return; }
+  if ($('.overlay[data-ov="help"]')) { closeOverlay("help"); return; }
+  if ($('.overlay[data-ov="exit"]')) { closeOverlay("exit"); return; }
+  if ($('.overlay[data-ov="results"]')) return;
+  if (UI.replay) { handleReplay(UI.replay.playing ? "pause" : "play"); return; }
+  var s = UI.state, a = MK.actor(s);
+  if (!a || !canAct()) return;
+  if (a.kind === "pick") { doPick(); return; }
+  var tg = MK.giveTargets(s, a.seat);
+  if (tg.length === 1) tryGive(tg[0]);
+  else if (tg.length > 1) { UI.armed = true; render(); toast("Two receivers — tap the glowing seat you want", true); }
+  else doPass();
+}
+function revealViewer() {
+  var a = MK.actor(UI.state); if (!a) return;
+  UI.viewer = a.seat; closeOverlay("curtain"); Snd.click(); render(); post();
+}
+function handleAct(act) {
+  if (act === "pick") doPick();
+  else if (act === "pass") doPass();
+  else if (act === "arm") armGive();
+  else if (act === "curtain" || act === "reveal") revealViewer();
+  else if (act === "close-help") closeOverlay("help");
+  else if (act === "close-exit") closeOverlay("exit");
+  else if (act === "quit" || act === "rp-lobby") quitToLobby();
+  else if (act === "rp-replay") startReplay();
+  else if (act === "rp-again") dealAgain();
+}
+function onSeatClick(i) {
+  var s = UI.state, a = MK.actor(s);
+  if (canAct() && a.kind === "exchange" && i !== a.seat) { tryGive(i); return; }
+  var p = s.players[i], t = MK.top(p);
+  toast("<b>" + esc(p.name) + "</b> · " + p.stack.length + " card" + (p.stack.length === 1 ? "" : "s") +
+    " · public top " + miniCard(t) + (p.kind === "bot" ? " · 🤖 robot" : "") +
+    (MK.longestRun(p.stack) > 1 ? " · run of " + MK.longestRun(p.stack) : ""));
+}
+function toggleHelp() { if ($('.overlay[data-ov="help"]')) closeOverlay("help"); else showHelp(); }
+function toggleLog() { $("#log").classList.toggle("hidden"); }
+function toggleSound() {
+  settings.sound = !settings.sound; Snd.set(settings.sound);
+  $("#sound-ico").textContent = settings.sound ? "🔊" : "🔇";
+  $("#set-sound").setAttribute("aria-checked", String(settings.sound));
+  if (settings.sound) Snd.click();
+}
+
+/* ---------- drag your top card onto a seat ---------- */
+var drag = null;
+function dragStart(e) {
+  if (UI.replay) return;
+  var slot = e.target.closest(".fslot.is-top"); if (!slot) return;
+  var s = UI.state, a = MK.actor(s);
+  if (!canAct() || a.kind !== "exchange") return;
+  if (!MK.giveTargets(s, a.seat).length) return;
+  drag = { x0: e.clientX, y0: e.clientY, moved: false, el: null, card: MK.topOf(s, a.seat) };
+  UI.dragMoved = false;
+}
+function dragMove(e) {
+  if (!drag) return;
+  if (!drag.moved) {
+    if (Math.hypot(e.clientX - drag.x0, e.clientY - drag.y0) < 7) return;
+    drag.moved = true; UI.dragMoved = true; UI.armed = true; render();
+    var w = document.createElement("div"); w.innerHTML = cardHTML(drag.card, "md");
+    var c = w.firstChild; c.classList.add("fx-card");
+    c.style.cssText += ";width:66px;pointer-events:none;opacity:.96;z-index:96";
+    $("#fx").appendChild(c); drag.el = c;
+    Snd.click();
+  }
+  drag.el.style.left = (e.clientX - 33) + "px";
+  drag.el.style.top = (e.clientY - 46) + "px";
+  var hit = document.elementFromPoint(e.clientX, e.clientY);
+  var seat = hit && hit.closest ? hit.closest(".seat") : null;
+  UI.seatEls.forEach(function (el) {
+    var on = !!seat && el === seat && el.classList.contains("is-target");
+    el.style.transform = on ? "translate(-50%,-50%) scale(1.14)" : "";
+  });
+}
+function dragEnd(e) {
+  if (!drag) return;
+  var d = drag; drag = null;
+  if (d.el) d.el.remove();
+  UI.seatEls.forEach(function (el) { el.style.transform = ""; });
+  if (!d.moved) return;
+  var hit = document.elementFromPoint(e.clientX, e.clientY);
+  var seat = hit && hit.closest ? hit.closest(".seat") : null;
+  if (seat) tryGive(+seat.dataset.seat);
+  else { UI.armed = false; render(); }
+  setTimeout(function () { UI.dragMoved = false; }, 30);
+}
+
+/* ================================================================
+   LOBBY
+   ================================================================ */
+var roster = [
+  { name: "You", kind: "human" },
+  { name: "Meera", kind: "human" },
+  { name: "Rohan", kind: "bot" },
+  { name: "Zoya", kind: "bot" }
+];
+var settings = { curtain: true, sound: true, speed: 1, autopass: true };
+var seed = (Math.random() * 4294967295) >>> 0;
+
+function renderRoster() {
+  $("#players-list").innerHTML = roster.map(function (p, i) {
+    return '<div class="seat-row">' +
+      '<div class="avatar" style="background:' + accent(i, roster.length) + '">' + esc(initial(p.name || "?")) + "</div>" +
+      '<input class="nm" value="' + esc(p.name) + '" data-i="' + i + '" maxlength="18" aria-label="Player ' + (i + 1) + ' name">' +
+      '<div class="kind">' +
+      '<button data-k="human" data-i="' + i + '" aria-pressed="' + (p.kind === "human") + '">Human</button>' +
+      '<button data-k="bot" data-i="' + i + '" aria-pressed="' + (p.kind === "bot") + '">Robot</button>' +
+      "</div>" +
+      '<button class="x-btn" data-del="' + i + '" title="Remove seat" aria-label="Remove ' + esc(p.name) + '">✕</button>' +
+      "</div>";
+  }).join("");
+  $("#seat-counter").textContent = roster.length + " / 10";
+  $("#add-player").disabled = roster.length >= 10;
+}
+function newGame(useSeed) {
+  if (roster.length < 2) { toast("You need at least 2 players"); return; }
+  if (!roster.some(function (p) { return p.kind === "human"; })) { toast("At least one human must sit at the table"); return; }
+  roster.forEach(function (p) { if (!p.name.trim()) p.name = "Player"; });
+  UI.cfg = {
+    seed: (useSeed != null ? useSeed : seed) >>> 0,
+    players: roster.map(function (p) { return { name: p.name.trim(), kind: p.kind }; }),
+    settings: { curtain: settings.curtain, sound: settings.sound, speed: settings.speed, autopass: settings.autopass }
+  };
+  UI.actions = []; UI.viewer = 0; UI.armed = false; UI.replay = null;
+  UI.resultsShown = false; UI.curtainSeat = -1; UI.finalState = null;
+  clearTimeout(UI.botTimer); clearTimeout(UI.autoTimer);
+  Snd.set(settings.sound);
+  UI.state = MK.create(UI.cfg);
+  $("#screen-lobby").classList.add("hidden");
+  $("#screen-game").classList.remove("hidden");
+  closeAllOverlays();
+  buildSeats(); render(); post();
+  toast("Table <b>" + UI.cfg.seed.toString(36).toUpperCase() + "</b> · " + esc(MK.name(UI.state, UI.state.starter)) + " starts the dealing", true);
+}
+function dealAgain() {
+  closeOverlay("results");
+  seed = (Math.random() * 4294967295) >>> 0;
+  $("#seed-label").textContent = seed.toString(36).toUpperCase();
+  newGame(seed);
+}
+function quitToLobby() {
+  clearTimeout(UI.botTimer); clearTimeout(UI.autoTimer);
+  if (UI.replay && UI.replay.timer) clearTimeout(UI.replay.timer);
+  UI.replay = null;
+  if (UI.finalState) { UI.state = UI.finalState; UI.finalState = null; }
+  closeAllOverlays();
+  $("#screen-game").classList.add("hidden");
+  $("#screen-lobby").classList.remove("hidden");
+}
+
+/* ================================================================
+   BOOT
+   ================================================================ */
+function boot() {
+  /* lobby demo cards */
+  function demo(sel, c) {
+    var el = $(sel); if (!el) return;
+    var w = document.createElement("div"); w.innerHTML = cardHTML(c, "sm");
+    var card = w.firstChild; card.id = el.id; card.style.cssText = "--sw:46px"; el.replaceWith(card);
+  }
+  demo("#demo-a", { r: 11, s: 0 });   /* K♠ */
+  demo("#demo-b", { r: 10, s: 1 });   /* Q♥ */
+  demo("#demo-c", { r: 12, s: 3 });   /* A♦ */
+
+  renderRoster();
+  $("#seed-label").textContent = seed.toString(36).toUpperCase();
+
+  /* roster editing */
+  $("#players-list").addEventListener("input", function (e) {
+    var i = e.target.dataset.i; if (i == null) return;
+    roster[+i].name = e.target.value;
+    var av = e.target.closest(".seat-row").querySelector(".avatar");
+    av.textContent = initial(e.target.value || "?");
+  });
+  $("#players-list").addEventListener("click", function (e) {
+    var k = e.target.closest("[data-k]");
+    if (k) { roster[+k.dataset.i].kind = k.dataset.k; Snd.click(); renderRoster(); return; }
+    var d = e.target.closest("[data-del]");
+    if (d) {
+      if (roster.length <= 2) { toast("2 players is the minimum"); Snd.deny(); return; }
+      roster.splice(+d.dataset.del, 1); Snd.click(); renderRoster();
+    }
+  });
+  $("#add-player").onclick = function () {
+    if (roster.length >= 10) { toast("10 is the table maximum"); return; }
+    var used = roster.map(function (p) { return p.name; });
+    var nm = NAMES.filter(function (x) { return used.indexOf(x) < 0; })[0] || ("Player " + (roster.length + 1));
+    roster.push({ name: nm, kind: "human" }); Snd.click(); renderRoster();
+  };
+  $("#set-autopass").onclick = function () { settings.autopass = !settings.autopass; this.setAttribute("aria-checked", String(settings.autopass)); Snd.click(); };
+  $("#set-curtain").onclick = function () { settings.curtain = !settings.curtain; this.setAttribute("aria-checked", String(settings.curtain)); Snd.click(); };
+  $("#set-sound").onclick = function () { toggleSound(); };
+  $("#set-speed").onclick = function (e) {
+    var b = e.target.closest("[data-v]"); if (!b) return;
+    settings.speed = parseFloat(b.dataset.v);
+    $$("#set-speed button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+    Snd.click();
+  };
+  $("#reseed").onclick = function () { seed = (Math.random() * 4294967295) >>> 0; $("#seed-label").textContent = seed.toString(36).toUpperCase(); Snd.click(); };
+  $("#start-game").onclick = function () { Snd.click(); newGame(seed); };
+
+  /* table chrome */
+  $("#tb-help").onclick = showHelp;
+  $("#tb-sound").onclick = toggleSound;
+  $("#tb-exit").onclick = showExit;
+  $("#logbtn").onclick = function () { toggleLog(); Snd.click(); };
+
+  /* global click delegation */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("[data-act]"); if (a) { handleAct(a.dataset.act); return; }
+    var r = e.target.closest("[data-rp]"); if (r) { handleReplay(r.dataset.rp); return; }
+    var vw = e.target.closest("[data-view]");
+    if (vw) { UI.viewer = +vw.dataset.view; UI.armed = false; Snd.click(); render(); return; }
+    var seat = e.target.closest(".seat"); if (seat && UI.state) { onSeatClick(+seat.dataset.seat); return; }
+    if (e.target.closest("#deck")) {
+      if (!UI.state) return;
+      var s = UI.state, ac = MK.actor(s);
+      if (UI.replay) return;
+      if (canAct() && ac && ac.kind === "pick") { doPick(); return; }
+      if (ac && ac.kind === "pick") toast("It’s " + esc(MK.name(s, ac.seat)) + "’s pick");
+      else if (ac) toast("Exchange window open — the middle pile is locked until it closes");
+      return;
+    }
+    if (e.target.classList && e.target.classList.contains("overlay") && e.target.dataset.ov !== "curtain") e.target.remove();
+  });
+
+  /* fan: tap top card to arm, drag to give */
+  $("#fan").addEventListener("click", function (e) {
+    if (UI.dragMoved) return;
+    var slot = e.target.closest(".fslot.is-top"); if (!slot) return;
+    armGive();
+  });
+  $("#fan").addEventListener("pointerdown", dragStart);
+  window.addEventListener("pointermove", dragMove);
+  window.addEventListener("pointerup", dragEnd);
+  window.addEventListener("pointercancel", function () { if (drag && drag.el) drag.el.remove(); drag = null; UI.seatEls.forEach(function (el) { el.style.transform = ""; }); });
+
+  /* keyboard */
+  document.addEventListener("keydown", function (e) {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+    var k = (e.key || "").toLowerCase();
+    if (e.code === "Space" || k === " ") { if (!UI.state) return; e.preventDefault(); primary(); }
+    else if (k === "g") armGive();
+    else if (k === "p") doPass();
+    else if (k === "h") toggleHelp();
+    else if (k === "l") toggleLog();
+    else if (k === "m") toggleSound();
+    else if (k === "escape") { UI.armed = false; closeOverlay("help"); closeOverlay("exit"); if (UI.state) render(); }
+  });
+
+  var rt = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(rt);
+    rt = setTimeout(function () { if (UI.state) { positionSeats(); render(); } }, 120);
+  });
+}
+document.addEventListener("DOMContentLoaded", boot);
+</script>
+</body>
+</html>
